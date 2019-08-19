@@ -15,11 +15,14 @@ public class Grab : Interactable
     float time;
     bool wasGrabbed;
     Vector3 startingPosition;
+    Quaternion startingRotation;
 
     Rigidbody rb;
     Controller controller;
 
     List<Collider> controllers = new List<Collider>();
+
+    int currentIndex = 0;
 
     public override void Start()
     {
@@ -28,6 +31,7 @@ public class Grab : Interactable
 
         time = resetTime;                               //Set the time it takes for the objects position to reset
         startingPosition = transform.position;          //Store the initial position of the object
+        startingRotation = transform.rotation;          //Store the inital rotation of the object
     }
 
     public override void Interact()
@@ -40,6 +44,7 @@ public class Grab : Interactable
     {
         if (other.tag.Equals("Controller"))
         {
+            print("Controller touched");
             if(!controllers.Contains(other))
                 controllers.Add(other);
 
@@ -49,6 +54,9 @@ public class Grab : Interactable
 
     private void OnTriggerExit(Collider other)
     {
+        if (other.tag.Equals("Controller"))
+            print("Controller gone");
+
         if (other.tag.Equals("Controller") && controllers.Contains(other))
             controllers.Remove(other);
 
@@ -62,21 +70,18 @@ public class Grab : Interactable
 
         if(ControllerNear && !IsGrabbed)    //If there is a controller within the radius and this object is not currently being grabbed
         {
-            controller = controllers[0].GetComponent<Controller>(); //Store the controller that grabbed this object
-
-            if((controller.handedness == Handedness.Left ? InputManager.Instance.LeftGrip : InputManager.Instance.RightGrip) > 0) //Check the controllers handedness in order to see if the grip button on that controller has been pressed
+            if (ControllerNear && controllers.Count > 1)
             {
-                wasGrabbed = true; //Store the fact that this object has been grabbed recently
-                if (HasInteraction && !Triggered)   //If this is a grabble object that triggers an event and the event has not been triggered already, then trigger the event
-                    Interact();
-
-                transform.SetParent(controller.transform);  //Child this object to the controller that grabbed it
-
-                rb.useGravity = false;  //Disable the gravity of the object and set it to kinematic
-                rb.isKinematic = true;
-
-                IsGrabbed = true;   //The object is now currently being grabbed
+                if (currentIndex == 0)
+                    currentIndex = 1;
+                else
+                    currentIndex = 0;
             }
+            else
+                currentIndex = 0;
+
+            controller = controllers[currentIndex].GetComponent<Controller>(); //Store the controller that grabbed this object
+            GrabObject(controller);
         }
 
         if(controller && IsGrabbed) //If the object is currently being grabbed and the controller that is grabbing it exsists
@@ -87,6 +92,9 @@ public class Grab : Interactable
 
                 rb.useGravity = true;   //re enable the gravity of the object and set isKinematic back to false
                 rb.isKinematic = false;
+
+                rb.velocity = (controller.handedness == Handedness.Left ? InputManager.Instance.LeftVelocity : InputManager.Instance.RightVelocity) / 2;
+                rb.angularVelocity = controller.handedness == Handedness.Left ? InputManager.Instance.LeftAngularVelocity : InputManager.Instance.RightAngularVelocity;
 
                 IsGrabbed = false;  //the object is no longer being grabbed
                 controller = null;  //clear the cached controller
@@ -102,9 +110,29 @@ public class Grab : Interactable
         }
     }
 
+    void GrabObject(Controller controller)
+    {
+        if ((controller.handedness == Handedness.Left ? InputManager.Instance.LeftGrip : InputManager.Instance.RightGrip) > 0) //Check the controllers handedness in order to see if the grip button on that controller has been pressed
+        {
+            wasGrabbed = true; //Store the fact that this object has been grabbed recently
+            if (HasInteraction && !Triggered)   //If this is a grabble object that triggers an event and the event has not been triggered already, then trigger the event
+                Interact();
+
+            transform.SetParent(controller.transform);  //Child this object to the controller that grabbed it
+
+            rb.useGravity = false;  //Disable the gravity of the object and set it to kinematic
+            rb.isKinematic = true;
+
+            time = resetTime;   //Reset timer
+            IsGrabbed = true;   //The object is now currently being grabbed
+        }
+    }
+
     public override void Reset()
     {
+        rb.velocity = Vector3.zero;
         transform.position = startingPosition;  //Set the position of this object back to it's starting position
+        transform.rotation = startingRotation;  //Set the rotation of this object back to it's starting rotation
         wasGrabbed = false;                     //This object has no longer been recently grabbed
         time = resetTime;                       //Reset the timer for the next time the object is grabbed
             

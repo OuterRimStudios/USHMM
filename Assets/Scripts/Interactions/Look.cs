@@ -33,7 +33,7 @@ public class Look : Interactable
             Ray ray = new Ray(Player.position, Player.forward);
             Debug.DrawRay(ray.origin, ray.direction, Color.red, 30f);
 
-            if (Physics.SphereCast(ray, lookRadius, 30f, interactionLayer))    //if the player is looking at the interactable and the interactable has not already been triggered, then trigger the interactable.
+            if (Physics.SphereCast(ray, lookRadius, 30f, interactionLayer) && !Triggered)    //if the player is looking at the interactable and the interactable has not already been triggered, then trigger the interactable.
             {
                 MathUtilities.Timer(ref time);
                 Debug.Log(time);

@@ -64,6 +64,38 @@ public class Controls : IInputActionCollection
                     ""expectedControlType"": ""Quaternion"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Left Velocity"",
+                    ""type"": ""Value"",
+                    ""id"": ""d33a7f76-b2a4-41a8-a3db-fa2352dd8555"",
+                    ""expectedControlType"": ""Vector3"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Right Velocity"",
+                    ""type"": ""Value"",
+                    ""id"": ""3e6ee34c-d41a-4098-bded-44e02d3591a3"",
+                    ""expectedControlType"": ""Vector3"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Left Angular Velocity"",
+                    ""type"": ""Value"",
+                    ""id"": ""ef40b8e1-8a13-4331-8a9d-f79fa99635bf"",
+                    ""expectedControlType"": ""Vector3"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Right Angular Velocity"",
+                    ""type"": ""Value"",
+                    ""id"": ""3d2b5f4a-d33e-4843-a0d1-68646e0c92b7"",
+                    ""expectedControlType"": ""Vector3"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -132,6 +164,50 @@ public class Controls : IInputActionCollection
                     ""action"": ""Right Rotation"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""39146789-261d-4389-ac1b-03751ecae7a1"",
+                    ""path"": ""<KnucklesController>{LeftHand}/deviceVelocity"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Left Velocity"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4a800c27-f995-4bad-b557-04f15e83ebfd"",
+                    ""path"": ""<KnucklesController>{RightHand}/deviceVelocity"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Right Velocity"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""86a773c4-6f05-4665-862f-053a2e6e2b68"",
+                    ""path"": ""<KnucklesController>{LeftHand}/deviceAngularVelocity"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Left Angular Velocity"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b9faf6dd-58fe-4886-a983-c99e1ae006d6"",
+                    ""path"": ""<KnucklesController>{RightHand}/deviceAngularVelocity"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Right Angular Velocity"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -159,6 +235,10 @@ public class Controls : IInputActionCollection
         m_Input_LeftRotation = m_Input.GetAction("Left Rotation");
         m_Input_RightPosition = m_Input.GetAction("Right Position");
         m_Input_RightRotation = m_Input.GetAction("Right Rotation");
+        m_Input_LeftVelocity = m_Input.GetAction("Left Velocity");
+        m_Input_RightVelocity = m_Input.GetAction("Right Velocity");
+        m_Input_LeftAngularVelocity = m_Input.GetAction("Left Angular Velocity");
+        m_Input_RightAngularVelocity = m_Input.GetAction("Right Angular Velocity");
     }
 
     ~Controls()
@@ -214,6 +294,10 @@ public class Controls : IInputActionCollection
     private readonly InputAction m_Input_LeftRotation;
     private readonly InputAction m_Input_RightPosition;
     private readonly InputAction m_Input_RightRotation;
+    private readonly InputAction m_Input_LeftVelocity;
+    private readonly InputAction m_Input_RightVelocity;
+    private readonly InputAction m_Input_LeftAngularVelocity;
+    private readonly InputAction m_Input_RightAngularVelocity;
     public struct InputActions
     {
         private Controls m_Wrapper;
@@ -224,6 +308,10 @@ public class Controls : IInputActionCollection
         public InputAction @LeftRotation => m_Wrapper.m_Input_LeftRotation;
         public InputAction @RightPosition => m_Wrapper.m_Input_RightPosition;
         public InputAction @RightRotation => m_Wrapper.m_Input_RightRotation;
+        public InputAction @LeftVelocity => m_Wrapper.m_Input_LeftVelocity;
+        public InputAction @RightVelocity => m_Wrapper.m_Input_RightVelocity;
+        public InputAction @LeftAngularVelocity => m_Wrapper.m_Input_LeftAngularVelocity;
+        public InputAction @RightAngularVelocity => m_Wrapper.m_Input_RightAngularVelocity;
         public InputActionMap Get() { return m_Wrapper.m_Input; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -251,6 +339,18 @@ public class Controls : IInputActionCollection
                 RightRotation.started -= m_Wrapper.m_InputActionsCallbackInterface.OnRightRotation;
                 RightRotation.performed -= m_Wrapper.m_InputActionsCallbackInterface.OnRightRotation;
                 RightRotation.canceled -= m_Wrapper.m_InputActionsCallbackInterface.OnRightRotation;
+                LeftVelocity.started -= m_Wrapper.m_InputActionsCallbackInterface.OnLeftVelocity;
+                LeftVelocity.performed -= m_Wrapper.m_InputActionsCallbackInterface.OnLeftVelocity;
+                LeftVelocity.canceled -= m_Wrapper.m_InputActionsCallbackInterface.OnLeftVelocity;
+                RightVelocity.started -= m_Wrapper.m_InputActionsCallbackInterface.OnRightVelocity;
+                RightVelocity.performed -= m_Wrapper.m_InputActionsCallbackInterface.OnRightVelocity;
+                RightVelocity.canceled -= m_Wrapper.m_InputActionsCallbackInterface.OnRightVelocity;
+                LeftAngularVelocity.started -= m_Wrapper.m_InputActionsCallbackInterface.OnLeftAngularVelocity;
+                LeftAngularVelocity.performed -= m_Wrapper.m_InputActionsCallbackInterface.OnLeftAngularVelocity;
+                LeftAngularVelocity.canceled -= m_Wrapper.m_InputActionsCallbackInterface.OnLeftAngularVelocity;
+                RightAngularVelocity.started -= m_Wrapper.m_InputActionsCallbackInterface.OnRightAngularVelocity;
+                RightAngularVelocity.performed -= m_Wrapper.m_InputActionsCallbackInterface.OnRightAngularVelocity;
+                RightAngularVelocity.canceled -= m_Wrapper.m_InputActionsCallbackInterface.OnRightAngularVelocity;
             }
             m_Wrapper.m_InputActionsCallbackInterface = instance;
             if (instance != null)
@@ -273,6 +373,18 @@ public class Controls : IInputActionCollection
                 RightRotation.started += instance.OnRightRotation;
                 RightRotation.performed += instance.OnRightRotation;
                 RightRotation.canceled += instance.OnRightRotation;
+                LeftVelocity.started += instance.OnLeftVelocity;
+                LeftVelocity.performed += instance.OnLeftVelocity;
+                LeftVelocity.canceled += instance.OnLeftVelocity;
+                RightVelocity.started += instance.OnRightVelocity;
+                RightVelocity.performed += instance.OnRightVelocity;
+                RightVelocity.canceled += instance.OnRightVelocity;
+                LeftAngularVelocity.started += instance.OnLeftAngularVelocity;
+                LeftAngularVelocity.performed += instance.OnLeftAngularVelocity;
+                LeftAngularVelocity.canceled += instance.OnLeftAngularVelocity;
+                RightAngularVelocity.started += instance.OnRightAngularVelocity;
+                RightAngularVelocity.performed += instance.OnRightAngularVelocity;
+                RightAngularVelocity.canceled += instance.OnRightAngularVelocity;
             }
         }
     }
@@ -294,5 +406,9 @@ public class Controls : IInputActionCollection
         void OnLeftRotation(InputAction.CallbackContext context);
         void OnRightPosition(InputAction.CallbackContext context);
         void OnRightRotation(InputAction.CallbackContext context);
+        void OnLeftVelocity(InputAction.CallbackContext context);
+        void OnRightVelocity(InputAction.CallbackContext context);
+        void OnLeftAngularVelocity(InputAction.CallbackContext context);
+        void OnRightAngularVelocity(InputAction.CallbackContext context);
     }
 }

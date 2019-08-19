@@ -98,5 +98,20 @@ namespace OuterRimStudios.Utilities
             return distance;
         }
         #endregion
+
+        public static bool Timer(ref float currentTime)
+        {
+            if (currentTime > 0)
+            {
+                    if (currentTime - Time.deltaTime > 0)
+                        currentTime -= Time.deltaTime;
+                    else
+                        currentTime = 0;
+
+                return false;
+            }
+            else
+                return true;
+        }
     }
 }

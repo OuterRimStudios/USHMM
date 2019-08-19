@@ -14,13 +14,12 @@ public class Interactable : MonoBehaviour
 
     public bool InProximity { get; set; }
     public bool Triggered { get; set; }
-
-    Transform player;
+    public Transform Player { get; protected set; }
 
     public virtual void Start()
     {
         if(useProximity)
-            player = GameObject.Find("Player").transform;
+            Player = GameObject.Find("Player").transform;
     }
 
     public virtual void Interact()
@@ -37,7 +36,7 @@ public class Interactable : MonoBehaviour
 
     public virtual void CheckProximity()
     {
-        InProximity = MathUtilities.CheckDistance(player.position, transform.position) < proximityDistance;
+        InProximity = MathUtilities.CheckDistance(Player.position, transform.position) < proximityDistance;
     }
 
     public virtual void Reset()

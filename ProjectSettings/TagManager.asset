@@ -14,11 +14,11 @@ TagManager:
   - 
   - 
   - Interactable
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Environment
+  - FogVolumeShadowCaster
+  - FogVolume
+  - FogVolumeSurrogate
+  - FogVolumeUniform
   - 
   - 
   - 

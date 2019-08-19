@@ -5,10 +5,16 @@ using OuterRimStudios.Utilities;
 
 public class Interactable : MonoBehaviour
 {
+    [Header("Proximity")]
     public bool useProximity;
     public float proximityDistance;
 
+    [Space, Header("Repeatable")]
+    public bool isRepeatable;
+
     public bool InProximity { get; set; }
+    public bool Triggered { get; set; }
+
     Transform player;
 
     public virtual void Start()
@@ -17,18 +23,27 @@ public class Interactable : MonoBehaviour
             player = GameObject.Find("Player").transform;
     }
 
-    public virtual void Interact() { }
+    public virtual void Interact()
+    {
+        Triggered = true;
+    }
 
     public virtual void Update()
     {
         if (!useProximity) return;
-        Proximity();
+        CheckProximity();
         print(InProximity);
     }
 
-    void Proximity()
+    public virtual void CheckProximity()
     {
         InProximity = MathUtilities.CheckDistance(player.position, transform.position) < proximityDistance;
+    }
+
+    public virtual void Reset()
+    {
+        if (isRepeatable)
+            Triggered = false;
     }
 
     private void OnDrawGizmos()

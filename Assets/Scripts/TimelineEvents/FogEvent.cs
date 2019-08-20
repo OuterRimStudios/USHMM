@@ -27,12 +27,13 @@ public class FogEvent : Event
 
     bool UpdateFog()
     {
-        if(Mathf.Abs(fogVolume.Visibility - fogStages[eventCounter].visibility) <= 0.1f || Mathf.Abs(fogVolume.Coverage - fogStages[eventCounter].coverage) <= 0.1f)
+        if(Mathf.Abs(fogVolume.Visibility - fogStages[eventCounter].visibility) <= 0.1f)
             return true;
         else
         {
             fogVolume.Visibility = Mathf.MoveTowards(fogVolume.Visibility, fogStages[eventCounter].visibility, fogStages[eventCounter].transitionSpeed * Time.deltaTime);
             fogVolume.Coverage = Mathf.MoveTowards(fogVolume.Coverage, fogStages[eventCounter].coverage, fogStages[eventCounter].transitionSpeed * Time.deltaTime);
+            fogVolume.NoiseDensity = Mathf.MoveTowards(fogVolume.NoiseDensity, fogStages[eventCounter].density, fogStages[eventCounter].transitionSpeed * Time.deltaTime);
             return false;
         }
     }
@@ -45,5 +46,7 @@ public struct FogValues
     public float visibility;
     [Range(0, 5)]
     public float coverage;
+    [Range(0, 20)]
+    public float density;
     public float transitionSpeed;
 }

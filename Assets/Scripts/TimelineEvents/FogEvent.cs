@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class FogEvent : Event
 {
-    public FogVolume fogVolume;
+    public FogVolume groundFogVolume;
+    public FogVolume uniformFogVolume;
     public List<FogValues> fogStages;
     int eventCounter;
-    float velocity;
     public override void StartEvent()
     {
         base.StartEvent();
@@ -27,13 +27,17 @@ public class FogEvent : Event
 
     bool UpdateFog()
     {
-        if(Mathf.Abs(fogVolume.Visibility - fogStages[eventCounter].visibility) <= 0.1f)
+        if(Mathf.Abs(groundFogVolume.Visibility - fogStages[eventCounter].visibility) <= 0.1f)
             return true;
         else
         {
-            fogVolume.Visibility = Mathf.MoveTowards(fogVolume.Visibility, fogStages[eventCounter].visibility, fogStages[eventCounter].transitionSpeed * Time.deltaTime);
-            fogVolume.Coverage = Mathf.MoveTowards(fogVolume.Coverage, fogStages[eventCounter].coverage, fogStages[eventCounter].transitionSpeed * Time.deltaTime);
-            fogVolume.NoiseDensity = Mathf.MoveTowards(fogVolume.NoiseDensity, fogStages[eventCounter].density, fogStages[eventCounter].transitionSpeed * Time.deltaTime);
+            groundFogVolume.Visibility = Mathf.MoveTowards(groundFogVolume.Visibility, fogStages[eventCounter].visibility, fogStages[eventCounter].transitionSpeed * Time.deltaTime);
+            uniformFogVolume.Visibility = Mathf.MoveTowards(uniformFogVolume.Visibility, fogStages[eventCounter].visibility, fogStages[eventCounter].transitionSpeed * Time.deltaTime);
+            if(groundFogVolume.EnableNoise)
+            {
+                groundFogVolume.Coverage = Mathf.MoveTowards(groundFogVolume.Coverage, fogStages[eventCounter].coverage, fogStages[eventCounter].transitionSpeed * Time.deltaTime);
+                groundFogVolume.NoiseDensity = Mathf.MoveTowards(groundFogVolume.NoiseDensity, fogStages[eventCounter].density, fogStages[eventCounter].transitionSpeed * Time.deltaTime);
+            }
             return false;
         }
     }

@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Event : MonoBehaviour
 {
-    public void StartEvent()
+    public virtual void StartEvent()
     {
         print("Event Started");
     }
 
-    public void StopEvent()
+    public virtual void StopEvent()
     {
         print("Event Ended");
     }

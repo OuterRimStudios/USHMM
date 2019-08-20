@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Controller
   layers:
   - Default
   - TransparentFX
@@ -19,6 +20,11 @@ TagManager:
   - FogVolume
   - FogVolumeSurrogate
   - FogVolumeUniform
+  - Player
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 

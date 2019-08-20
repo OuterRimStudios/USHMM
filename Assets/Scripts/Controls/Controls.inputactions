@@ -1,0 +1,217 @@
+{
+    "name": "Controls",
+    "maps": [
+        {
+            "name": "Input",
+            "id": "8f28cd2d-6e21-4ed8-8d6b-1e3dac4ba167",
+            "actions": [
+                {
+                    "name": "Right Grip",
+                    "type": "Value",
+                    "id": "7ce041e6-8c4e-493a-a3a9-8268699daa59",
+                    "expectedControlType": "Double",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Left Grip",
+                    "type": "Value",
+                    "id": "98d3f139-a883-469d-b535-68dfb572b342",
+                    "expectedControlType": "Double",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Left Position",
+                    "type": "Value",
+                    "id": "dd6d06a6-4193-48be-8bc2-045874fa67e7",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Left Rotation",
+                    "type": "Value",
+                    "id": "e1b5215f-81e2-438a-9de4-4d1dc3577099",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Right Position",
+                    "type": "Value",
+                    "id": "907bab19-b249-49b2-811a-bfa796cdded1",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Right Rotation",
+                    "type": "Value",
+                    "id": "a20abd5a-6681-4b46-b152-9f8b4cfede9f",
+                    "expectedControlType": "Quaternion",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Left Velocity",
+                    "type": "Value",
+                    "id": "d33a7f76-b2a4-41a8-a3db-fa2352dd8555",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Right Velocity",
+                    "type": "Value",
+                    "id": "3e6ee34c-d41a-4098-bded-44e02d3591a3",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Left Angular Velocity",
+                    "type": "Value",
+                    "id": "ef40b8e1-8a13-4331-8a9d-f79fa99635bf",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Right Angular Velocity",
+                    "type": "Value",
+                    "id": "3d2b5f4a-d33e-4843-a0d1-68646e0c92b7",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a6bf921a-c6ad-4133-b9c4-f63c9a450b37",
+                    "path": "<KnucklesController>{RightHand}/grip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Knuckles",
+                    "action": "Right Grip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "647267ca-d2bc-4843-b5f0-be2e2a5fb7e2",
+                    "path": "<KnucklesController>{LeftHand}/grip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Knuckles",
+                    "action": "Left Grip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ad80f1b3-dfa9-4a0e-a624-7ff898d11cfa",
+                    "path": "<KnucklesController>{LeftHand}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2724f7c8-24cb-489e-82d9-2dc0bcb6d2bb",
+                    "path": "<KnucklesController>{RightHand}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Right Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a2cf9f93-29a8-4c18-8063-0633195a23b6",
+                    "path": "<KnucklesController>{LeftHand}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e89da580-1cef-4801-98c6-7f5b933f02f4",
+                    "path": "<KnucklesController>{RightHand}/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Right Rotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "39146789-261d-4389-ac1b-03751ecae7a1",
+                    "path": "<KnucklesController>{LeftHand}/deviceVelocity",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Velocity",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4a800c27-f995-4bad-b557-04f15e83ebfd",
+                    "path": "<KnucklesController>{RightHand}/deviceVelocity",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Right Velocity",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "86a773c4-6f05-4665-862f-053a2e6e2b68",
+                    "path": "<KnucklesController>{LeftHand}/deviceAngularVelocity",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Angular Velocity",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b9faf6dd-58fe-4886-a983-c99e1ae006d6",
+                    "path": "<KnucklesController>{RightHand}/deviceAngularVelocity",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Right Angular Velocity",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Knuckles",
+            "basedOn": "",
+            "bindingGroup": "Knuckles",
+            "devices": [
+                {
+                    "devicePath": "<KnucklesController>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}

@@ -19,6 +19,12 @@ public class InputManager : MonoBehaviour
     public Quaternion LeftRotation { get; private set; }
     public Quaternion RightRotation { get; private set; }
 
+    public Vector3 LeftVelocity { get; private set; }
+    public Vector3 RightVelocity { get; private set; }
+
+    public Vector3 LeftAngularVelocity { get; private set; }
+    public Vector3 RightAngularVelocity { get; private set; }
+
     void Awake()
     {
         Instance = this;
@@ -46,5 +52,11 @@ public class InputManager : MonoBehaviour
 
         LeftRotation = controls.Input.LeftRotation.ReadValue<Quaternion>();
         RightRotation = controls.Input.RightRotation.ReadValue<Quaternion>();
+
+        LeftVelocity = controls.Input.LeftVelocity.ReadValue<Vector3>();
+        RightVelocity = controls.Input.RightVelocity.ReadValue<Vector3>();
+
+        LeftAngularVelocity = controls.Input.LeftAngularVelocity.ReadValue<Vector3>();
+        RightAngularVelocity = controls.Input.RightAngularVelocity.ReadValue<Vector3>();
     }
 }

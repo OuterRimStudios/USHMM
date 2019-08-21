@@ -12,6 +12,8 @@ public class DocumentsEvent : Event
     public List<Frame> frames;
     public List<Transform> endPoints;
 
+    public GameObject documentParticles;
+
     private void Start()
     {
         CollectionUtilities.Shuffle(images);
@@ -25,6 +27,7 @@ public class DocumentsEvent : Event
 
     public override void StartEvent()
     {
+        documentParticles.SetActive(true);
         StartCoroutine(Spawn());
     }
 

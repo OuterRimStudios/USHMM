@@ -5,12 +5,12 @@ using OuterRimStudios.Utilities;
 
 public class CurvedMovement : MonoBehaviour
 {
+    public Transform startingPosition;
     public float curveHeightMultiplier = 1.0f;
     public float speed;
     public Transform endPosition;
 
     AnimationCurve curve = new AnimationCurve();
-    Vector3 startingPosition;
     float time;
 
     bool arrived;
@@ -18,9 +18,7 @@ public class CurvedMovement : MonoBehaviour
 
     private void Start()
     {
-        startingPosition = transform.localPosition;
-
-        float distance = MathUtilities.CheckDistance(startingPosition, endPosition.position);
+        float distance = MathUtilities.CheckDistance(startingPosition.position, endPosition.position);
 
         curve.AddKey(new Keyframe(0, 0));
         curve.AddKey(new Keyframe(distance / 2, (distance / 2) * curveHeightMultiplier));
@@ -34,10 +32,10 @@ public class CurvedMovement : MonoBehaviour
     {
         if (arrived) return;
         time += Time.deltaTime * speed;
-        Vector3 position = Vector3.MoveTowards(startingPosition, endPosition.localPosition, time);
+        Vector3 position = Vector3.MoveTowards(startingPosition.position, endPosition.position, time);
 
         position.y = curve.Evaluate(time);
-        transform.localPosition = position;
+        transform.position = position;
 
         if (MathUtilities.CheckDistance(transform.position, endPosition.position) < 1f)
             arrived = true;

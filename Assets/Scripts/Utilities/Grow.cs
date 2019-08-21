@@ -5,10 +5,16 @@ using UnityEngine;
 public class Grow : MonoBehaviour
 {
     public float scaleSpeed;
-    public Vector3 targetSize;
+    public float size = 1f;
+
+    Vector3 targetSize;
+    SpriteRenderer spriteRenderer;
 
     public IEnumerator Start()
     {
+        var bounds = GetComponent<SpriteRenderer>().sprite.bounds;
+        var factor = size / bounds.size.y;
+        targetSize = new Vector3(factor, factor, factor);
 
         yield return new WaitForSeconds(.5f);
         StartCoroutine(Scale());

@@ -3,6 +3,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using System;
 
 namespace OuterRimStudios.Utilities
 {
@@ -15,7 +16,7 @@ namespace OuterRimStudios.Utilities
         /// <returns>Returns a random element from the entered array.</returns>
         public static T GetRandomItem<T>(this T[] array)
         {
-            return array[Random.Range(0, array.Length)];
+            return array[UnityEngine.Random.Range(0, array.Length)];
         }
 
         /// <summary>Get a random element of a given list.</summary>
@@ -24,7 +25,7 @@ namespace OuterRimStudios.Utilities
         /// <returns>Returns a random element from the entered list.</returns>
         public static T GetRandomItem<T>(this List<T> list)
         {
-            return list[Random.Range(0, list.Count)];
+            return list[UnityEngine.Random.Range(0, list.Count)];
         }
 
         /// <summary>Get a random element of a given list.</summary>
@@ -42,7 +43,7 @@ namespace OuterRimStudios.Utilities
                     chosenOnes.Add(t);
             }
 
-            return chosenOnes[Random.Range(0, chosenOnes.Count)];
+            return chosenOnes[UnityEngine.Random.Range(0, chosenOnes.Count)];
         }
 
         /// <summary>Get a random element of a given array.</summary>
@@ -60,7 +61,7 @@ namespace OuterRimStudios.Utilities
                     chosenOnes.Add(t);
             }
 
-            return chosenOnes[Random.Range(0, chosenOnes.Count)];
+            return chosenOnes[UnityEngine.Random.Range(0, chosenOnes.Count)];
         }
 
         #endregion
@@ -128,5 +129,20 @@ namespace OuterRimStudios.Utilities
             return tempList.ToArray();
         }
         #endregion
+
+        private static System.Random rng = new System.Random();
+
+        public static void Shuffle<T>(this IList<T> list)
+        {
+            int n = list.Count;
+            while (n > 1)
+            {
+                n--;
+                int k = rng.Next(n + 1);
+                T value = list[k];
+                list[k] = list[n];
+                list[n] = value;
+            }
+        }
     }
 }

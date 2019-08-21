@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class FogEvent : Event
 {
-    public FogVolume groundFogVolume;
-    public FogVolume uniformFogVolume;
+    public List<FogVolume> fogVolumes;
     public List<FogValues> fogStages;
     int eventCounter;
     public override void StartEvent()
@@ -27,16 +26,18 @@ public class FogEvent : Event
 
     bool UpdateFog()
     {
-        if(Mathf.Abs(groundFogVolume.Visibility - fogStages[eventCounter].visibility) <= 0.1f)
+        if (Mathf.Abs(fogVolumes[0].Visibility - fogStages[eventCounter].visibility) <= 0.1f)
             return true;
         else
         {
-            groundFogVolume.Visibility = Mathf.MoveTowards(groundFogVolume.Visibility, fogStages[eventCounter].visibility, fogStages[eventCounter].transitionSpeed * Time.deltaTime);
-            uniformFogVolume.Visibility = Mathf.MoveTowards(uniformFogVolume.Visibility, fogStages[eventCounter].visibility, fogStages[eventCounter].transitionSpeed * Time.deltaTime);
-            if(groundFogVolume.EnableNoise)
+            foreach (FogVolume volume in fogVolumes)
             {
-                groundFogVolume.Coverage = Mathf.MoveTowards(groundFogVolume.Coverage, fogStages[eventCounter].coverage, fogStages[eventCounter].transitionSpeed * Time.deltaTime);
-                groundFogVolume.NoiseDensity = Mathf.MoveTowards(groundFogVolume.NoiseDensity, fogStages[eventCounter].density, fogStages[eventCounter].transitionSpeed * Time.deltaTime);
+                volume.Visibility = Mathf.MoveTowards(volume.Visibility, fogStages[eventCounter].visibility, fogStages[eventCounter].transitionSpeed * Time.deltaTime);
+                if (volume.EnableNoise)
+                {
+                    volume.Coverage = Mathf.MoveTowards(volume.Coverage, fogStages[eventCounter].coverage, fogStages[eventCounter].transitionSpeed * Time.deltaTime);
+                    volume.NoiseDensity = Mathf.MoveTowards(volume.NoiseDensity, fogStages[eventCounter].density, fogStages[eventCounter].transitionSpeed * Time.deltaTime);
+                }
             }
             return false;
         }

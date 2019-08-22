@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class FeatherEvent : Event
 {
+    public GameObject feathers;
+
     public override void StartEvent()
     {
-        base.StartEvent();
+        feathers.SetActive(true);
     }
 
     public override void StopEvent()

@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class SnowEvent : Event
 {
+    public ParticleSystem snow;
+
     public override void StartEvent()
     {
-        base.StartEvent();
+        snow.gameObject.SetActive(true);
     }
 
     public override void StopEvent()
     {
-        base.StopEvent();
+        snow.loop = false;
     }
 }

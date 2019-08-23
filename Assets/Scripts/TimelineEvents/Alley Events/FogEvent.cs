@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class FogEvent : Event
 {
-    public List<FogVolume> fogVolumes;
+    public List<ParticleSystem> fogVolumes;
     public List<FogValues> fogStages;
     int eventCounter;
     public override void StartEvent()
     {
         base.StartEvent();
-        StartCoroutine(StartFogUpdate());
+        //StartCoroutine(StartFogUpdate());
     }
 
     public override void StopEvent()
     {
         base.StopEvent();
     }
-
+/* 
     IEnumerator StartFogUpdate()
     {
         yield return new WaitUntil(UpdateFog);
@@ -41,17 +41,13 @@ public class FogEvent : Event
             }
             return false;
         }
-    }
+    } */
 }
 
 [System.Serializable]
 public struct FogValues
 {
-    [Range(1, 60)]
-    public float visibility;
-    [Range(0, 5)]
-    public float coverage;
-    [Range(0, 20)]
-    public float density;
+    [Range(0, 1)]
+    public float alpha;
     public float transitionSpeed;
 }

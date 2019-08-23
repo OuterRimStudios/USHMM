@@ -889,7 +889,6 @@ public class FogVolumeRenderer : MonoBehaviour
         SafeDestroy(_TAAvelocity);
         SafeDestroy(_TAAjitter);
         SafeDestroy(_FogVolumeCameraGO);
-        SafeDestroy(RT_FogVolume);
         SafeDestroy(RT_FogVolumeR);
         SafeDestroy(RT_Depth);
         SafeDestroy(RT_DepthR);

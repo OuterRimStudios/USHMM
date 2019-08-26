@@ -3,8 +3,9 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -22,14 +23,17 @@ MonoBehaviour:
   winter: 1
   possibiltyInWinter: 50
   cloudsConfig:
-    ambientTopColorBrightness: 1
-    ambientbottomColorBrightness: 1
-    skyBlending: 1
-    alphaCoef: 4
+    ambientSkyColorIntensity: 1
     scatteringCoef: 0.137
+    edgeDarkness: 2
+    baseErosionIntensity: 0
+    detailErosionIntensity: 0.2
     density: 1.72
+    densityLightning: 1
     coverage: 2
-    coverageHeight: 0.672
+    coverageModTop: 2
+    coverageModBottom: 1
+    coverageType: 1
     raymarchingScale: 1
     cloudType: 0.638
     cirrusAlpha: 0
@@ -138,8 +142,10 @@ MonoBehaviour:
     m_NumColorKeys: 4
     m_NumAlphaKeys: 4
   volumeLightIntensity: 1
+  shadowIntensityMod: 0
   heightFogDensity: 0.65
   SkyFogHeight: 2
+  skyFogStart: 0
   SkyFogIntensity: 0.026
   FogScatteringIntensity: 1.12
   fogSunBlocking: 0.25
@@ -151,6 +157,7 @@ MonoBehaviour:
   temperatureLevel: 0
   isLightningStorm: 0
   lightningInterval: 10
+  auroraIntensity: 0
   weatherSFX: {fileID: 0}
   SpringDayAmbient: {fileID: 8300000, guid: 9e4f9b704d4c6a545863111b7ab9bb51, type: 3}
   SpringNightAmbient: {fileID: 8300000, guid: 421815712ee5317449eeef6d06fac4a3, type: 3}

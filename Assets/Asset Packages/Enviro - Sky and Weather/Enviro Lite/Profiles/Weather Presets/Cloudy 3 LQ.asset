@@ -151,7 +151,7 @@ MonoBehaviour:
   fogSunBlocking: 1
   moonIntensity: 1
   effectSystems: []
-  WindStrenght: 0.275
+  WindStrenght: 0.07
   wetnessLevel: 0
   snowLevel: 0
   temperatureLevel: 0

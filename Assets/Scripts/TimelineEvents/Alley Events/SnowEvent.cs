@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SnowEvent : Event
+public class SnowEvent : OuterRimStudios.Event
 {
     public ParticleSystem snow;
 

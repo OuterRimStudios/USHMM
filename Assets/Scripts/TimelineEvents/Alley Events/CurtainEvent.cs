@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CurtainEvent : Event
+public class CurtainEvent : OuterRimStudios.Event
 {
     public override void StartEvent()
     {

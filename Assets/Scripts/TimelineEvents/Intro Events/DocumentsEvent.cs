@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using OuterRimStudios.Utilities;
 
-public class DocumentsEvent : Event
+public class DocumentsEvent : OuterRimStudios.Event
 {
     public float minSpawnTime;
     public float maxSpawnTime;

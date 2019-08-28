@@ -2,15 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Event : MonoBehaviour
+namespace OuterRimStudios
 {
-    public virtual void StartEvent()
+    public class Event : MonoBehaviour
     {
-        print("Event Started");
-    }
+        public virtual void StartEvent()
+        {
+            print("Event Started");
+        }
 
-    public virtual void StopEvent()
-    {
-        print("Event Ended");
+        public virtual void StopEvent()
+        {
+            print("Event Ended");
+        }
     }
 }

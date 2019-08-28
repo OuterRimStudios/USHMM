@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public enum FadeType { FadeIn, FadeOut }
 
-public class FadeEvent : Event
+public class FadeEvent : OuterRimStudios.Event
 {
     public Image fadePanel;
     public float fadeSpeed = 1;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FeatherEvent : Event
+public class FeatherEvent : OuterRimStudios.Event
 {
     public GameObject feathers;
 

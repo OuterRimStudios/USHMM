@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FogEvent : Event
+public class FogEvent : OuterRimStudios.Event
 {
     //public List<FogVolume> fogVolumes;
    // public List<FogValues> fogStages;

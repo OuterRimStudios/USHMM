@@ -9,7 +9,11 @@ public class ResolutionScale : MonoBehaviour
 
     void Start()
     {
-        //Application.targetFrameRate = 90;
+        Application.targetFrameRate = 90;
+#if UNITY_EDITOR
+        XRSettings.eyeTextureResolutionScale = 1;
+#elif UNITY_STANDALONE
         XRSettings.eyeTextureResolutionScale = resolutionScale;
+#endif
     }
 }

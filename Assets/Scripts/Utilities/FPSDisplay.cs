@@ -4,13 +4,11 @@ using UnityEngine.UI;
 public class FPSDisplay : MonoBehaviour
 {
     public int avgFrameRate;
-    public Text display_Text;
-
-    public void Update()
+    private void OnGUI()
     {
         float current = 0;
         current = (int)(1f / Time.unscaledDeltaTime);
         avgFrameRate = (int)current;
-        display_Text.text = avgFrameRate.ToString() + " FPS";
+        GUILayout.Label(avgFrameRate.ToString());
     }
 }

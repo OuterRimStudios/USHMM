@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class CurtainEvent : OuterRimStudios.Event
 {
+    public delegate void CurtainEvents();
+    public static event CurtainEvents OnGust;
     public override void StartEvent()
     {
         base.StartEvent();
+        OnGust?.Invoke();
     }
 
     public override void StopEvent()

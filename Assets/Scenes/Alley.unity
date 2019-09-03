@@ -152,8 +152,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Events:
-    m_Signals: []
-    m_Events: []
+    m_Signals:
+    - {fileID: 11400000, guid: 8ddf7e6e2c779e2449d3cca4457bb532, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 31884492}
+          m_MethodName: StartEvent
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!114 &31884492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2698,7 +2714,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!320 &1007958491
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -2717,8 +2733,6 @@ PlayableDirector:
   - key: {fileID: -1903432003280236207, guid: 7f432204203bcd548a1ca12c8dcf5724, type: 2}
     value: {fileID: 1594030416}
   - key: {fileID: 5043472093682894991, guid: 7f432204203bcd548a1ca12c8dcf5724, type: 2}
-    value: {fileID: 1594030416}
-  - key: {fileID: 5097304083025436150, guid: 7f432204203bcd548a1ca12c8dcf5724, type: 2}
     value: {fileID: 1594030416}
   - key: {fileID: 2101453919073305935, guid: 7f432204203bcd548a1ca12c8dcf5724, type: 2}
     value: {fileID: 2066040943}
@@ -4807,6 +4821,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 440545362206342997, guid: abfbae83a3823274bac1dc70d0e60fcf,
+        type: 3}
+      propertyPath: m_AABB.m_Extent.z
+      value: 0.19850448
+      objectReference: {fileID: 0}
+    - target: {fileID: 9026294789614900566, guid: abfbae83a3823274bac1dc70d0e60fcf,
+        type: 3}
+      propertyPath: m_AABB.m_Extent.z
+      value: 0.19850448
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abfbae83a3823274bac1dc70d0e60fcf, type: 3}

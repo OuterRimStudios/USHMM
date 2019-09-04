@@ -9,7 +9,7 @@ using Debug = UnityEngine.Debug;
 
 public class SceneLoader : MonoBehaviour
 {
-
+    string rootPath;
 #if UNITY_STANDALONE
     List<SceneInfo> sceneManifest = new List<SceneInfo>();
     void Start()
@@ -26,13 +26,9 @@ public class SceneLoader : MonoBehaviour
                 finalPathLength = i;
         }
 
-        string mainfestPath = dataPath.Substring(0, finalPathLength);
-        if (File.Exists(mainfestPath + "/SceneManifest.xml"))
-        {
-            sceneManifest = XMLOp.Deserialize<List<SceneInfo>>(mainfestPath + "/SceneManifest.xml");
-            Debug.LogError("number of scenes: " + sceneManifest.Count);
-            Debug.LogError("scene index: " + sceneManifest[0].sceneIndex + " | " + sceneManifest[0].executablePath);
-        }
+        rootPath = dataPath.Substring(0, finalPathLength);
+        if (File.Exists(rootPath + "/SceneManifest.xml"))
+            sceneManifest = XMLOp.Deserialize<List<SceneInfo>>(rootPath + "/SceneManifest.xml");
     }
 #endif
 
@@ -48,7 +44,7 @@ public class SceneLoader : MonoBehaviour
                     try
                     {
                         Process newScene = new Process();
-                        newScene.StartInfo.FileName = sceneManifest[i].executablePath;
+                        newScene.StartInfo.FileName = rootPath + sceneManifest[i].folderName + SceneManifest.BUILD_NAME;
                         newScene.Start();
                         Application.Quit();
                     }
@@ -77,11 +73,16 @@ public class SceneLoader : MonoBehaviour
 
 public class SceneManifest
 {
-    public static void CreateSceneManifest(List<string> exePaths, string manifestPath)
+    public const string BUILD_NAME = "/Build.exe";
+
+    public static void CreateSceneManifest(List<string> folderNames, string manifestPath)
     {
         List<SceneInfo> sceneInfoList = new List<SceneInfo>();
-        for (int i = 0; i < exePaths.Count; i++)
-            sceneInfoList.Add(new SceneInfo(i + 1, exePaths[i]));
+        for (int i = 0; i < folderNames.Count; i++)
+        {
+            //Debug.Log(folderNames[i]);
+            sceneInfoList.Add(new SceneInfo(i + 1, folderNames[i]));
+        }
 
         XMLOp.Serialize(sceneInfoList, manifestPath + "/SceneManifest.xml");
     }
@@ -90,16 +91,16 @@ public class SceneManifest
 public class SceneInfo
 {
     public int sceneIndex;
-    public string executablePath;
+    public string folderName;
 
     public SceneInfo()
     {
         sceneIndex = -1;
-        executablePath = "";
+        folderName = "";
     }
-    public SceneInfo(int _sceneIndex, string _executablePath)
+    public SceneInfo(int _sceneIndex, string _folderName)
     {
         sceneIndex = _sceneIndex;
-        executablePath = _executablePath;
+        folderName = _folderName;
     }
 }

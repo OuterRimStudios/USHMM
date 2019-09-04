@@ -2033,7 +2033,7 @@ MonoBehaviour:
       scale: {x: 10, y: 10, z: 10}
   densityInjection:
     enable: 1
-    strength: 2
+    strength: 60
     useNoiseMask: 1
     useNoiseMaskLevels: 1
     noiseMaskLevelParameters:
@@ -11251,11 +11251,11 @@ MonoBehaviour:
     - m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 2066040944}
-          m_MethodName: 
+          m_MethodName: StartEvent
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -11275,6 +11275,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afe070e609f37ce40b922c4d2670808a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  auraVolumes:
+  - {fileID: 441988383}
+  fogStages:
+  - density: 2
+    transitionSpeed: 3
 --- !u!4 &2066040945
 Transform:
   m_ObjectHideFlags: 0

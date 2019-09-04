@@ -21,7 +21,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.7075472, g: 0.45957905, b: 0.37046102, a: 1}
+  m_AmbientSkyColor: {r: 0.56287825, g: 0.56638145, b: 0.8584906, a: 1}
   m_AmbientEquatorColor: {r: 0.17254902, g: 0.26666668, b: 0.34901962, a: 1}
   m_AmbientGroundColor: {r: 0.07450981, g: 0.11372549, b: 0.14901961, a: 1}
   m_AmbientIntensity: 1
@@ -3135,7 +3135,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -5210,7 +5210,7 @@ MonoBehaviour:
   useScattering: 1
   scattering: 1
   useAmbientLighting: 1
-  ambientLightingStrength: 0.11
+  ambientLightingStrength: 0.125
   useColor: 1
   color: {r: 0.5, g: 0.49999973, b: 0.4999995, a: 1}
   colorStrength: 0.5

@@ -19,7 +19,9 @@ public class BuildManager
         List<string> exePaths = new List<string>();
         foreach (string level in levels)
         {
-            string folderName = level.Substring(13);
+            UnityEngine.Debug.Log(level);
+            int sceneNameLength = level.Length - 19;    //the 19 comes from 'Assets/Scenes/' + '.unity' that are removed
+            string folderName = level.Substring(13, sceneNameLength);
             string exePath = path + folderName + "/Build.exe";
             exePaths.Add(exePath);
             BuildPipeline.BuildPlayer(new string[] { level }, exePath, BuildTarget.StandaloneWindows64, BuildOptions.Development);

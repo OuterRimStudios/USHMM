@@ -21,7 +21,7 @@ public class Controls : IInputActionCollection
                     ""name"": ""Right Grip"",
                     ""type"": ""Value"",
                     ""id"": ""7ce041e6-8c4e-493a-a3a9-8268699daa59"",
-                    ""expectedControlType"": ""Double"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
                 },
@@ -29,7 +29,7 @@ public class Controls : IInputActionCollection
                     ""name"": ""Left Grip"",
                     ""type"": ""Value"",
                     ""id"": ""98d3f139-a883-469d-b535-68dfb572b342"",
-                    ""expectedControlType"": ""Double"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
                 },
@@ -215,7 +215,6 @@ public class Controls : IInputActionCollection
     ""controlSchemes"": [
         {
             ""name"": ""Knuckles"",
-            ""basedOn"": """",
             ""bindingGroup"": ""Knuckles"",
             ""devices"": [
                 {

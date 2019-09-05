@@ -36,7 +36,6 @@ public class Interactable : MonoBehaviour
     {
         if (!useProximity) return;
         CheckProximity();
-        print(InProximity);
     }
 
     public virtual void CheckProximity()

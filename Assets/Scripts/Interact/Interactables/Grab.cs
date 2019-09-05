@@ -118,7 +118,7 @@ public class Grab : Interactable
             if (HasInteraction && !Triggered)   //If this is a grabble object that triggers an event and the event has not been triggered already, then trigger the event
                 Interact();
 
-            transform.SetParent(controller.transform);  //Child this object to the controller that grabbed it
+            transform.parent = (controller.transform);  //Child this object to the controller that grabbed it
 
             rb.useGravity = false;  //Disable the gravity of the object and set it to kinematic
             rb.isKinematic = true;

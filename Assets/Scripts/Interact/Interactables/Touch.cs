@@ -7,7 +7,7 @@ public class Touch : Interactable
     public override void Interact()
     {
         base.Interact();
-        print("Interact");
+        print("Touched");
     }
 
     private void OnTriggerEnter(Collider other)

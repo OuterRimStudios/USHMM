@@ -58,5 +58,8 @@ public class InputManager : MonoBehaviour
 
         LeftAngularVelocity = controls.Input.LeftAngularVelocity.ReadValue<Vector3>();
         RightAngularVelocity = controls.Input.RightAngularVelocity.ReadValue<Vector3>();
+
+        Debug.Log("Left Grip: " + LeftGrip);
+        Debug.Log("Right Grip: " + RightGrip);
     }
 }

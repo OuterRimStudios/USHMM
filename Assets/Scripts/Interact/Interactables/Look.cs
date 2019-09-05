@@ -36,7 +36,6 @@ public class Look : Interactable
             if (Physics.SphereCast(ray, lookRadius, 30f, interactionLayer) && !Triggered)    //if the player is looking at the interactable and the interactable has not already been triggered, then trigger the interactable.
             {
                 MathUtilities.Timer(ref time);
-                Debug.Log(time);
                 if (!Triggered && time <= 0)
                     Interact();
             }

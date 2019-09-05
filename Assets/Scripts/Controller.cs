@@ -30,21 +30,21 @@ public class Controller : MonoBehaviour
 
         Collider[] interactables = Physics.OverlapSphere(transform.position, interactionRadius, interactionLayer);
 
-        //float grip = (handedness == Handedness.Left ? inputManager.LeftGrip : inputManager.RightGrip);
+        float grip = (handedness == Handedness.Left ? inputManager.LeftGrip : inputManager.RightGrip);
 
-        //if (interactables.Length > 0 && !heldObject && grip > 0)
-        //{
-        //    heldObject = interactables[0].transform;
+        if (interactables.Length > 0 && !heldObject && grip > 0)
+        {
+            heldObject = interactables[0].transform;
 
-        //    heldObject.transform.position = transform.position;
-        //    heldObject.SetParent(transform);
-        //}
+            heldObject.transform.position = transform.position;
+            heldObject.SetParent(transform);
+        }
 
-        //if(heldObject && grip <= 0)
-        //{
-        //    heldObject.SetParent(null);
-        //    heldObject = null;
-        //}
+        if (heldObject && grip <= 0)
+        {
+            heldObject.SetParent(null);
+            heldObject = null;
+        }
     }
 }
 

@@ -5,6 +5,8 @@ using OuterRimStudios.Utilities;
 
 public class Interactable : MonoBehaviour
 {
+    public List<Interaction> interactions;
+
     [Header("Proximity")]
     public bool useProximity;
     public float proximityDistance;
@@ -25,6 +27,9 @@ public class Interactable : MonoBehaviour
     public virtual void Interact()
     {
         Triggered = true;
+
+        foreach (Interaction interaction in interactions)
+            interaction.Interact();
     }
 
     public virtual void Update()
@@ -42,7 +47,12 @@ public class Interactable : MonoBehaviour
     public virtual void Reset()
     {
         if (isRepeatable)
+        {
             Triggered = false;
+
+            foreach (Interaction interaction in interactions)
+                interaction.Reset();
+        }
     }
 
     private void OnDrawGizmos()

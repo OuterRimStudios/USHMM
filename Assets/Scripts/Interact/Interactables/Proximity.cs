@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Proximity : Interactable
 {
+    public override void Start()
+    {
+        base.Start();
+    }
     public override void Interact()
     {
         base.Interact();
@@ -19,5 +23,4 @@ public class Proximity : Interactable
         else if(Triggered && isRepeatable && !InProximity)          //If this Interactable has already beed triggered and your no longer within proximity and this event can be repeated, Reset the event.
             Reset();
     }
-
 }

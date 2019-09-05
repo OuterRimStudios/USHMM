@@ -4,6 +4,18 @@ using UnityEngine;
 
 public class Interaction : MonoBehaviour
 {
-    public virtual void Interact() { }
+    public delegate void InteractionEvent(Interaction interaction);
+    public static event InteractionEvent OnInteracted;
+
+    public virtual void Interact()
+    {
+        OnInteracted?.Invoke(this);
+    }
+
+    public virtual void StopInteraction()
+    {
+        Debug.Log("Stopping Interaction");
+    }
+
     public virtual void Reset() { }
 }

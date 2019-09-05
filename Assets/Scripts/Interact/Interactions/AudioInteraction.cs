@@ -8,6 +8,12 @@ public class AudioInteraction : Interaction
 
     public override void Interact()
     {
+        base.Interact();
         audioSource.Play();
+    }
+
+    public override void StopInteraction()
+    {
+        audioSource.Stop();
     }
 }

@@ -11,6 +11,9 @@ public class Controller : MonoBehaviour
     public float interactionRadius = .5f;
     public LayerMask interactionLayer;
 
+    [Space]
+    public Animator animator;
+
     InputManager inputManager;
 
     Transform heldObject;
@@ -31,6 +34,7 @@ public class Controller : MonoBehaviour
         Collider[] interactables = Physics.OverlapSphere(transform.position, interactionRadius, interactionLayer);
 
         float grip = (handedness == Handedness.Left ? inputManager.LeftGrip : inputManager.RightGrip);
+        animator.SetFloat("Grip", grip);
 
         if (interactables.Length > 0 && !heldObject && grip > 0)
         {

@@ -22,7 +22,7 @@ TagManager:
   - FogVolumeUniform
   - Player
   - Shadow
-  - 
+  - IgnoreShadow
   - 
   - 
   - 

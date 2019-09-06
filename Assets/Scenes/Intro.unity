@@ -576,6 +576,21 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1467478795}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1096455489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096455485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d91f9fc80016dc428df0575ea75fe59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverOffset: 0.075
+  hoverSpeed: 0.05
+  rotationSpeed: 1
 --- !u!1001 &1467478795
 PrefabInstance:
   m_ObjectHideFlags: 0

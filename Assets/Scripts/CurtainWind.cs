@@ -6,6 +6,7 @@ using OuterRimStudios.Utilities;
 public class CurtainWind : MonoBehaviour
 {
     public Cloth curtain;
+    public CapsuleCollider[] allColliders;
     public CapsuleCollider[] colliders;
     public AudioSource source;
     public float minSpeed;
@@ -26,7 +27,7 @@ public class CurtainWind : MonoBehaviour
 
     private void Start()
     {
-        curtain.capsuleColliders = colliders;
+        curtain.capsuleColliders = allColliders;
         foreach (CapsuleCollider collider in colliders)
             collider.transform.rotation = Random.rotation;
         speed = Random.Range(minSpeed, maxSpeed);

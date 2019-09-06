@@ -10,7 +10,7 @@ public class CurvedMovement : MonoBehaviour
     public float speed;
     public Transform endPosition;
 
-    AnimationCurve curve = new AnimationCurve();
+    public AnimationCurve curve; // = new AnimationCurve()
     float time;
 
     bool arrived;
@@ -20,12 +20,12 @@ public class CurvedMovement : MonoBehaviour
     {
         float distance = MathUtilities.CheckDistance(startingPosition.position, endPosition.position);
 
-        curve.AddKey(new Keyframe(0, 0));
-        curve.AddKey(new Keyframe(distance / 2, (distance / 2) * curveHeightMultiplier));
-        curve.AddKey(new Keyframe(distance, 0));
+        //curve.AddKey(new Keyframe(0, 0));
+        //curve.AddKey(new Keyframe(distance / 2, (distance / 2) * curveHeightMultiplier));
+        //curve.AddKey(new Keyframe(distance, 0));
 
-        curve.SmoothTangents(0, 1);
-        curve.SmoothTangents(2, 1);
+        //curve.SmoothTangents(0, 1);
+        //curve.SmoothTangents(2, 1);
     }
 
     void Update()

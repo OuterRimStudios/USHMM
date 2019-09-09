@@ -17,14 +17,9 @@ public class Controller : MonoBehaviour
 
     InputManager inputManager;
 
-    Transform heldObject;
-
-    Transform player;
-
     void Start()
     {
         inputManager = InputManager.Instance;
-        player = transform.parent;
     }
 
     void Update()
@@ -36,20 +31,6 @@ public class Controller : MonoBehaviour
 
         float grip = (handedness == Handedness.Left ? inputManager.LeftGrip : inputManager.RightGrip);
         animator.SetFloat("Grip", grip,animationSmoothTime, Time.deltaTime);
-
-        //if (interactables.Length > 0 && !heldObject && grip > 0)
-        //{
-        //    heldObject = interactables[0].transform;
-
-        //    heldObject.transform.position = transform.position;
-        //    heldObject.SetParent(transform);
-        //}
-
-        //if (heldObject && grip <= 0)
-        //{
-        //    heldObject.SetParent(null);
-        //    heldObject = null;
-        //}
     }
 }
 

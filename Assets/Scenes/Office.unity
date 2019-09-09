@@ -3061,12 +3061,22 @@ PrefabInstance:
     - target: {fileID: 1464315875703607687, guid: e3090ed315345c2449c925c520c6e2ac,
         type: 3}
       propertyPath: moveWithTransform
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1464315875703607687, guid: e3090ed315345c2449c925c520c6e2ac,
         type: 3}
       propertyPath: scalingMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5236551355861992189, guid: e3090ed315345c2449c925c520c6e2ac,
+        type: 3}
+      propertyPath: m_AllowRoll
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5236551355861992189, guid: e3090ed315345c2449c925c520c6e2ac,
+        type: 3}
+      propertyPath: m_RenderAlignment
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1317469340866768915, guid: e3090ed315345c2449c925c520c6e2ac,
         type: 3}

@@ -8,6 +8,8 @@ public class CameraFacingBillboard : MonoBehaviour
 
     void Update()
     {
-        transform.LookAt(transform.position + mainCamera.transform.rotation * Vector3.forward, mainCamera.transform.rotation * Vector3.up);
+        Vector3 dir = mainCamera.transform.position - transform.position;
+        dir.y = 0;
+        transform.rotation = Quaternion.LookRotation(dir);
     }
 }

@@ -359,6 +359,18 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!114 &400963774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400963772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98bfd00e70f9aae40a93c446fd4b2772, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &400963775
 MonoBehaviour:
   m_ObjectHideFlags: 0

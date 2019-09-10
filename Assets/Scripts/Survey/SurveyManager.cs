@@ -4,14 +4,25 @@ using UnityEngine;
 
 public class SurveyManager : MonoBehaviour
 {
+    public static SurveyManager Instance;
+
     public List<QuestionField> questions;
-    public GameObject next;
-    public GameObject submit;
+    public GameObject previous;
 
     int currentQuestion = 0;
 
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     public void Next()
     {
+        if (currentQuestion == questions.Count - 2)
+        {
+            Submit();
+        }
+
         questions[currentQuestion].gameObject.SetActive(false);
 
         if (currentQuestion >= (questions.Count - 1))
@@ -20,17 +31,6 @@ public class SurveyManager : MonoBehaviour
             currentQuestion++;
 
         questions[currentQuestion].gameObject.SetActive(true);
-
-        if (currentQuestion == questions.Count - 1)
-        {
-            next.SetActive(false);
-            submit.SetActive(true);
-        }
-        else if(!next.activeInHierarchy)
-        {
-            submit.SetActive(false);
-            next.SetActive(true);
-        }
     }
 
     public void Previous()
@@ -43,17 +43,6 @@ public class SurveyManager : MonoBehaviour
             currentQuestion--;
         
         questions[currentQuestion].gameObject.SetActive(true);
-
-        if (currentQuestion == questions.Count - 1)
-        {
-            next.SetActive(false);
-            submit.SetActive(true);
-        }
-        else if (!next.activeInHierarchy)
-        {
-            submit.SetActive(false);
-            next.SetActive(true);
-        }
     }
 
     public void Submit()
@@ -63,8 +52,8 @@ public class SurveyManager : MonoBehaviour
         foreach (QuestionField question in questions)
             answers.Add(question.answer);
 
+        previous.SetActive(false);
         Debug.Log("Survey Submitted");
-        gameObject.SetActive(false);
         //Send to analytics
     }
 }

@@ -20,5 +20,6 @@ public class AnswerField : MonoBehaviour
 
         _answer.Selected();
         questionField.UpdateAnswer(_answer.text.text);
+        SurveyManager.Instance.Next();
     }
 }

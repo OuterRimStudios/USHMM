@@ -31,6 +31,7 @@ public class InputManager : MonoBehaviour
         Instance = this;
         controls = new Controls();
         controls.Enable();
+        SteamVR_Input.Initialize();
     }
 
     void OnDisable()
@@ -59,7 +60,7 @@ public class InputManager : MonoBehaviour
 
         LeftAngularVelocity = controls.Input.LeftAngularVelocity.ReadValue<Vector3>();
         RightAngularVelocity = controls.Input.RightAngularVelocity.ReadValue<Vector3>();
-
-        Debug.Log("steam left hand squeeze input: " + SteamVR_Input.GetFloat("Squeeze", SteamVR_Input_Sources.LeftHand, false));
+        Debug.Log("steam vr initialized: " + SteamVR_Input.initialized);
+        Debug.Log("steam left hand squeeze input: " + SteamVR_Input.GetFloat("default", "Squeeze", SteamVR_Input_Sources.LeftHand, false));
     }
 }

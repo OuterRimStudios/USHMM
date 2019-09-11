@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.InputSystem;
+using Valve.VR;
 
 public class InputManager : MonoBehaviour
 {
@@ -59,7 +60,6 @@ public class InputManager : MonoBehaviour
         LeftAngularVelocity = controls.Input.LeftAngularVelocity.ReadValue<Vector3>();
         RightAngularVelocity = controls.Input.RightAngularVelocity.ReadValue<Vector3>();
 
-        Debug.Log("Left Grip: " + LeftGrip);
-        Debug.Log("Right Grip: " + RightGrip);
+        Debug.Log("steam left hand squeeze input: " + SteamVR_Input.GetFloat("Squeeze", SteamVR_Input_Sources.LeftHand, false));
     }
 }

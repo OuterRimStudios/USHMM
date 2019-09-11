@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 
 public class SurveyManager : MonoBehaviour
 {
@@ -50,10 +51,8 @@ public class SurveyManager : MonoBehaviour
 
     public void Submit()
     {
-        List<string> answers = new List<string>();
-
-        foreach (QuestionField question in questions)
-            answers.Add(question.answer);
+        for (int i = 0; i < questions.Count - 1; i++)
+            Analytics.CustomEvent("SurveyResults", new Dictionary<string, object> { { "Question " + (i + 1), questions[i].answer } });
         
         Debug.Log("Survey Submitted");
         //Send to analytics

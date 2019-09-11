@@ -11,8 +11,8 @@ public class InputManager : MonoBehaviour
 
     Controls controls;
 
-    public float LeftGrip { get; private set; }
-    public float RightGrip { get; private set; }
+    public bool LeftGrip { get; private set; }
+    public bool RightGrip { get; private set; }
 
     public Vector3 LeftPosition { get; private set; }
     public Vector3 RightPosition { get; private set; }
@@ -31,7 +31,7 @@ public class InputManager : MonoBehaviour
         Instance = this;
         controls = new Controls();
         controls.Enable();
-        SteamVR_Input.Initialize();
+        //SteamVR_Input.Initialize();
     }
 
     void OnDisable()
@@ -46,21 +46,20 @@ public class InputManager : MonoBehaviour
 
     void GetInput()
     {
-        LeftGrip = controls.Input.LeftGrip.ReadValue<float>();
-        RightGrip = controls.Input.RightGrip.ReadValue<float>();
+        LeftGrip = SteamVR_Input.GetState("default", "GrabGrip", SteamVR_Input_Sources.LeftHand, false);
+        RightGrip = SteamVR_Input.GetState("default", "GrabGrip", SteamVR_Input_Sources.RightHand, false);
 
-        LeftPosition = controls.Input.LeftPosition.ReadValue<Vector3>();
-        RightPosition = controls.Input.RightPosition.ReadValue<Vector3>();
+        //LeftPosition = controls.Input.LeftPosition.ReadValue<Vector3>();
+        //RightPosition = controls.Input.RightPosition.ReadValue<Vector3>();
 
-        LeftRotation = controls.Input.LeftRotation.ReadValue<Quaternion>();
-        RightRotation = controls.Input.RightRotation.ReadValue<Quaternion>();
+        //LeftRotation = controls.Input.LeftRotation.ReadValue<Quaternion>();
+        //RightRotation = controls.Input.RightRotation.ReadValue<Quaternion>();
 
         LeftVelocity = controls.Input.LeftVelocity.ReadValue<Vector3>();
         RightVelocity = controls.Input.RightVelocity.ReadValue<Vector3>();
 
         LeftAngularVelocity = controls.Input.LeftAngularVelocity.ReadValue<Vector3>();
         RightAngularVelocity = controls.Input.RightAngularVelocity.ReadValue<Vector3>();
-        Debug.Log("steam vr initialized: " + SteamVR_Input.initialized);
-        Debug.Log("steam left hand squeeze input: " + SteamVR_Input.GetFloat("default", "Squeeze", SteamVR_Input_Sources.LeftHand, false));
+        Debug.Log(SteamVR_Input.GetState("default", "GrabGrip", SteamVR_Input_Sources.RightHand, false));
     }
 }

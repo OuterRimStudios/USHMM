@@ -86,7 +86,7 @@ public class Grab : Interactable
 
         if(controller && IsGrabbed) //If the object is currently being grabbed and the controller that is grabbing it exsists
         {
-            if ((controller.handedness == Handedness.Left ? InputManager.Instance.LeftGrip : InputManager.Instance.RightGrip) <= 0) //Check the handedness of this controller to determine when the player lets go of grip button
+            if ((controller.handedness == Handedness.Left ? InputManager.Instance.LeftGrip : InputManager.Instance.RightGrip) == false) //Check the handedness of this controller to determine when the player lets go of grip button
             {
                 transform.SetParent(null);  //unchild this object from the controller
 
@@ -112,7 +112,7 @@ public class Grab : Interactable
 
     void GrabObject(Controller controller)
     {
-        if ((controller.handedness == Handedness.Left ? InputManager.Instance.LeftGrip : InputManager.Instance.RightGrip) > 0) //Check the controllers handedness in order to see if the grip button on that controller has been pressed
+        if ((controller.handedness == Handedness.Left ? InputManager.Instance.LeftGrip : InputManager.Instance.RightGrip) == true) //Check the controllers handedness in order to see if the grip button on that controller has been pressed
         {
             wasGrabbed = true; //Store the fact that this object has been grabbed recently
             if (HasInteraction && !Triggered)   //If this is a grabble object that triggers an event and the event has not been triggered already, then trigger the event

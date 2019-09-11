@@ -24,13 +24,13 @@ public class Controller : MonoBehaviour
 
     void Update()
     {
-        transform.position = (handedness == Handedness.Left ? inputManager.LeftPosition : inputManager.RightPosition);
-        transform.rotation = handedness == Handedness.Left ? inputManager.LeftRotation : inputManager.RightRotation;
+        //transform.position = (handedness == Handedness.Left ? inputManager.LeftPosition : inputManager.RightPosition);
+        //transform.rotation = handedness == Handedness.Left ? inputManager.LeftRotation : inputManager.RightRotation;
 
-        Collider[] interactables = Physics.OverlapSphere(transform.position, interactionRadius, interactionLayer);
+        //Collider[] interactables = Physics.OverlapSphere(transform.position, interactionRadius, interactionLayer);
 
-        float grip = (handedness == Handedness.Left ? inputManager.LeftGrip : inputManager.RightGrip);
-        animator.SetFloat("Grip", grip,animationSmoothTime, Time.deltaTime);
+        //float grip = (handedness == Handedness.Left ? inputManager.LeftGrip : inputManager.RightGrip);
+        //animator.SetFloat("Grip", grip,animationSmoothTime, Time.deltaTime);
     }
 }
 

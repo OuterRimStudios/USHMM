@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: ADS Motion Flutter
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor\n// Available at the Unity Asset
+    Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=16800\n1927;29;1906;1014;2784.226;1294.642;1;True;False\nNode;AmplifyShaderEditor.FunctionInput;136;416,-1280;Float;False;Mask;1;3;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;220;-2176,-1152;Float;False;Amplitude;1;0;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;60;-64,-1280;Half;False;MotionFlutterScale;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;4;-512,-1280;Half;False;Global;ADS_GlobalScale;ADS_GlobalScale;2;0;Create;True;0;0;False;0;0;1;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;135;256,-1280;Half;False;Constant;_Float11;Float
+    11;4;0;Create;True;0;0;False;0;1;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;72;-992,-1280;Float;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;137;576,-1280;Half;False;MotionMask;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;222;-512,-1152;Float;False;Scale;1;2;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;58;-1696,-1280;Half;False;MotionlFlutterAmplitude;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;2;-1280,-1280;Half;False;Global;ADS_GlobalSpeed;ADS_GlobalSpeed;1;0;Create;True;0;0;False;0;0;2;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;71;-1856,-1280;Float;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;74;-224,-1280;Float;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;8;-2176,-1280;Half;False;Global;ADS_GlobalAmplitude;ADS_GlobalAmplitude;0;0;Create;True;0;0;False;0;0;2;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;62;-832,-1280;Half;False;MotionFlutterSpeed;-1;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;221;-1280,-1152;Float;False;Speed;1;1;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;305;-1024,-576;Float;False;60;MotionFlutterScale;1;0;OBJECT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;294;-256,-560;Float;False;137;MotionMask;1;0;OBJECT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;306;-1024,-480;Float;False;62;MotionFlutterSpeed;1;0;OBJECT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleTimeNode;303;-768,-480;Float;False;1;0;FLOAT;2;False;1;FLOAT;0\nNode;AmplifyShaderEditor.PosVertexDataNode;297;-2176,-768;Float;False;0;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.GetLocalVarNode;300;-256,-640;Float;False;58;MotionlFlutterAmplitude;1;0;OBJECT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionSwitch;312;-1792,-768;Float;False;Custom
+    Direction;False;0;2;-1;Off;On;Object;-1;9;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.NormalVertexDataNode;296;-256,-480;Float;False;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.SinOpNode;302;-256,-768;Float;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;304;-768,-768;Float;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.BreakToComponentsNode;311;-1536,-768;Float;False;FLOAT3;1;0;FLOAT3;0,0,0;False;16;FLOAT;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT;5;FLOAT;6;FLOAT;7;FLOAT;8;FLOAT;9;FLOAT;10;FLOAT;11;FLOAT;12;FLOAT;13;FLOAT;14;FLOAT;15\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;308;-1920,-608;Float;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;307;-1280,-768;Float;False;3;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;299;256,-768;Float;False;4;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;298;-512,-768;Float;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;310;-2176,-608;Float;False;Direction;3;4;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionOutput;0;448,-768;Float;False;True;Motion;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nWireConnection;136;0;135;0\nWireConnection;60;0;74;0\nWireConnection;72;0;2;0\nWireConnection;72;1;221;0\nWireConnection;137;0;136;0\nWireConnection;58;0;71;0\nWireConnection;71;0;8;0\nWireConnection;71;1;220;0\nWireConnection;74;0;4;0\nWireConnection;74;1;222;0\nWireConnection;62;0;72;0\nWireConnection;303;0;306;0\nWireConnection;312;0;297;0\nWireConnection;312;1;308;0\nWireConnection;302;0;298;0\nWireConnection;304;0;307;0\nWireConnection;304;1;305;0\nWireConnection;311;0;312;0\nWireConnection;308;0;297;0\nWireConnection;308;1;310;0\nWireConnection;307;0;311;0\nWireConnection;307;1;311;1\nWireConnection;307;2;311;2\nWireConnection;299;0;302;0\nWireConnection;299;1;300;0\nWireConnection;299;2;294;0\nWireConnection;299;3;296;0\nWireConnection;298;0;304;0\nWireConnection;298;1;303;0\nWireConnection;0;0;299;0\nASEEND*/\n//CHKSM=8FAA0CEBAC1A4917D2D33EBA5E372BC4B0E37BB8"
+  m_functionName: 
+  m_description: 'Global Flutter Animation Function with custom inputs.
+
+
+'
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_customNodeCategory: Advanced Dynamic Shaders
+  m_previewPosition: 0
+  m_hidden: 0

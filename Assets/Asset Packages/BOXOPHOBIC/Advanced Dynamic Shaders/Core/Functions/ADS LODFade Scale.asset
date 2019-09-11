@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: ADS LODFade Scale
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor\n// Available at the Unity Asset
+    Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=16800\n1927;29;1906;1014;1380.138;2663.117;1.125413;True;False\nNode;AmplifyShaderEditor.SimpleMaxOpNode;47;-512,-2048;Float;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;49;-896,-1920;Half;False;Constant;_Float1;Float
+    1;0;0;Create;True;0;0;False;0;0;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.LODFadeNode;38;-896,-2048;Float;False;0;5;FLOAT4;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.StaticSwitch;40;0,-2176;Float;False;Property;_LOD_FADE_CROSSFADE;LOD_FADE_CROSSFADE;0;0;Fetch;False;0;0;False;0;1;0;0;False;LOD_FADE_CROSSFADE;Toggle;2;Key0;Key1;Fetch;False;9;1;FLOAT3;0,0,0;False;0;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT3;0,0,0;False;5;FLOAT3;0,0,0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.StepOpNode;48;-672,-1952;Float;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;42;-896,-2432;Half;False;Constant;_Float0;Float
+    0;1;0;Create;True;0;0;False;0;0;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.LerpOp;57;-128,-2048;Float;False;3;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.PosVertexDataNode;55;-896,-2304;Float;False;0;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.NegateNode;56;-640,-2304;Float;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.OneMinusNode;52;-384,-2048;Float;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;41;-640,-2432;Float;False;Vertex
+    Pos;3;0;False;1;0;FLOAT3;1,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.StaticSwitch;58;320,-2304;Float;False;Property;_LOD_FADE_CROSSFADE;ADS_LODFADE_SCALE;0;0;Fetch;False;0;0;False;0;1;0;0;False;ADS_LODFADE_SCALE;Toggle;2;Key0;Key1;Fetch;False;9;1;FLOAT3;0,0,0;False;0;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;4;FLOAT3;0,0,0;False;5;FLOAT3;0,0,0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionOutput;0;640,-2304;Float;False;True;;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nWireConnection;47;0;38;1\nWireConnection;47;1;48;0\nWireConnection;40;1;41;0\nWireConnection;40;0;57;0\nWireConnection;48;0;38;1\nWireConnection;48;1;49;0\nWireConnection;57;0;41;0\nWireConnection;57;1;56;0\nWireConnection;57;2;52;0\nWireConnection;56;0;55;0\nWireConnection;52;0;47;0\nWireConnection;41;0;42;0\nWireConnection;58;1;41;0\nWireConnection;58;0;40;0\nWireConnection;0;0;58;0\nASEEND*/\n//CHKSM=7191C030B7D3FB21B53E3AC1670043143151C235"
+  m_functionName: 
+  m_description: 'LOD Scale Cross Fade.
+
+
+'
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 1
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 0
+  m_customNodeCategory: Advanced Dynamic Shaders
+  m_previewPosition: 0
+  m_hidden: 0

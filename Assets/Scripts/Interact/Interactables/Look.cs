@@ -35,8 +35,6 @@ public class Look : Interactable
     {
         base.CheckProximity();
 
-        Debug.Log("Name: " + transform.name + " -- Triggered: " + Triggered);
-
         if (InProximity)  //If the player is within proximity
         {
             Ray ray = new Ray(Player.position, Player.forward);

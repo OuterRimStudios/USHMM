@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Alley.unity
     guid: b7ddbe064731cf64088d32c048a28e89
+  - enabled: 1
+    path: Assets/Scenes/Survey.unity
+    guid: c99355cf3b62c93498ab59658a9e227d
   m_configObjects: {}

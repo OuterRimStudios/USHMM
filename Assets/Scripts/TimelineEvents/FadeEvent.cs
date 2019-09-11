@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using OuterRimStudios.Utilities;
 
 public enum FadeType { FadeIn, FadeOut }
 
@@ -13,7 +14,33 @@ public class FadeEvent : OuterRimStudios.Event
 
     public bool loadScene;
     public string sceneName;
+
+    public bool timed;
+    public float timer;
+
     Color color;
+    float time;
+    bool fading;
+
+    private void Start()
+    {
+        if (timed)
+            time = timer;
+    }
+
+    void Update()
+    {
+        if(timed)
+        {
+            MathUtilities.Timer(ref time);
+
+            if (!fading && time <= 0)
+            {
+                fading = true;
+                StartEvent(true);
+            }
+        }
+    }
 
     public void StartEvent(bool fadeIn)
     {
@@ -24,7 +51,7 @@ public class FadeEvent : OuterRimStudios.Event
     IEnumerator Fade(int value)
     {
         yield return new WaitUntil(() => Faded(value));
-
+        color.a = value;
         if (loadScene)
             SceneManager.LoadScene(sceneName);
     }

@@ -42,11 +42,20 @@ public class InteractionManager : MonoBehaviour
         timeOfInteraction = Time.timeSinceLevelLoad;
     }
 
+    //This function is only called when a new scene is loaded
     void SendAnalytics(Scene currentScene)
     {
+        Debug.Log("average time: " + totalTimeBetweenInteractions / interactionCount);
+        Debug.Log("interactionCount: " + interactionCount);
         Analytics.CustomEvent(currentScene.name, new Dictionary<string, object> {
             { "averageTimeBetweenInteractions", totalTimeBetweenInteractions/interactionCount },
             {"numberOfInteractions", interactionCount}
         });
+    }
+
+    //this will send the analytics when the application is closed, or playmode is exited
+    void OnApplicationQuit()
+    {
+        SendAnalytics(SceneManager.GetActiveScene());
     }
 }

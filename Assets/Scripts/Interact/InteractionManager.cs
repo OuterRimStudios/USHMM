@@ -30,10 +30,12 @@ public class InteractionManager : MonoBehaviour
         currentInteraction = newInteraction;
         string sceneName = SceneManager.GetActiveScene().name;
         interactionCount++;
+        Debug.Log("interaction object: " + newInteraction.gameObject.name);
         Analytics.CustomEvent(sceneName, new Dictionary<string, object> { { "object", newInteraction.gameObject.name } });
         if (!initialTimeSent)
         {
             initialTimeSent = true;
+            Debug.Log("initial interaction time: " + Time.timeSinceLevelLoad);
             Analytics.CustomEvent(sceneName, new Dictionary<string, object> { { "initialInteractionTime", Time.timeSinceLevelLoad } });
         }
         else

@@ -569,7 +569,7 @@ MonoBehaviour:
   useProximity: 1
   proximityDistance: 1000
   isRepeatable: 1
-  lookTime: 3.5
+  lookTime: 3
   lookRadius: 0.5
   interactionLayer:
     serializedVersion: 2
@@ -1392,7 +1392,7 @@ MonoBehaviour:
   useProximity: 1
   proximityDistance: 1000
   isRepeatable: 1
-  lookTime: 3.5
+  lookTime: 3
   lookRadius: 0.5
   interactionLayer:
     serializedVersion: 2
@@ -1806,7 +1806,7 @@ MonoBehaviour:
   useProximity: 1
   proximityDistance: 1000
   isRepeatable: 1
-  lookTime: 3.5
+  lookTime: 3
   lookRadius: 0.5
   interactionLayer:
     serializedVersion: 2
@@ -2260,7 +2260,7 @@ MonoBehaviour:
   useProximity: 1
   proximityDistance: 1000
   isRepeatable: 1
-  lookTime: 3.5
+  lookTime: 3
   lookRadius: 0.5
   interactionLayer:
     serializedVersion: 2
@@ -2557,7 +2557,7 @@ MonoBehaviour:
   useProximity: 1
   proximityDistance: 1000
   isRepeatable: 1
-  lookTime: 3.5
+  lookTime: 3
   lookRadius: 0.5
   interactionLayer:
     serializedVersion: 2
@@ -2854,7 +2854,7 @@ MonoBehaviour:
   useProximity: 1
   proximityDistance: 1000
   isRepeatable: 1
-  lookTime: 3.5
+  lookTime: 3
   lookRadius: 0.5
   interactionLayer:
     serializedVersion: 2
@@ -3151,7 +3151,7 @@ MonoBehaviour:
   useProximity: 1
   proximityDistance: 1000
   isRepeatable: 1
-  lookTime: 3.5
+  lookTime: 3
   lookRadius: 0.5
   interactionLayer:
     serializedVersion: 2
@@ -3443,7 +3443,7 @@ MonoBehaviour:
   useProximity: 1
   proximityDistance: 1000
   isRepeatable: 1
-  lookTime: 3.5
+  lookTime: 3
   lookRadius: 0.5
   interactionLayer:
     serializedVersion: 2
@@ -4079,7 +4079,7 @@ MonoBehaviour:
   useProximity: 1
   proximityDistance: 1000
   isRepeatable: 1
-  lookTime: 3.5
+  lookTime: 3
   lookRadius: 0.5
   interactionLayer:
     serializedVersion: 2
@@ -4464,7 +4464,7 @@ MonoBehaviour:
   useProximity: 1
   proximityDistance: 1000
   isRepeatable: 1
-  lookTime: 3.5
+  lookTime: 3
   lookRadius: 0.5
   interactionLayer:
     serializedVersion: 2
@@ -4879,7 +4879,7 @@ MonoBehaviour:
   useProximity: 1
   proximityDistance: 1000
   isRepeatable: 1
-  lookTime: 3.5
+  lookTime: 3
   lookRadius: 0.5
   interactionLayer:
     serializedVersion: 2
@@ -4963,7 +4963,7 @@ MonoBehaviour:
   useProximity: 1
   proximityDistance: 1000
   isRepeatable: 1
-  lookTime: 3.5
+  lookTime: 3
   lookRadius: 0.5
   interactionLayer:
     serializedVersion: 2

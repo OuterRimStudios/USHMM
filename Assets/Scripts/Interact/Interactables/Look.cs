@@ -48,7 +48,7 @@ public class Look : Interactable
                     Debug.Log("Looking at: " + transform.name);
                     if (Pointer.Instance)
                     {
-                        float pointerTime = MathUtilities.MapValue(1, 0, 0, lookTime, time);
+                        float pointerTime = MathUtilities.MapValue(0, lookTime, 1, 0, time);
                         Pointer.Instance.Fill(pointerTime);
                     }
 

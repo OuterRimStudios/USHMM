@@ -25,27 +25,38 @@ public class Look : Interactable
         print("Looking");
     }
 
+    void OnEnable()
+    {
+        if (isRepeatable)
+            Reset();
+    }
+
     public override void CheckProximity()
     {
         base.CheckProximity();
 
+        Debug.Log("Name: " + transform.name + " -- Triggered: " + Triggered);
+
         if (InProximity)  //If the player is within proximity
         {
             Ray ray = new Ray(Player.position, Player.forward);
-            Debug.DrawRay(ray.origin, ray.direction, Color.red, 30f);
+            RaycastHit hit;
 
-            if (Physics.SphereCast(ray, lookRadius, 30f, interactionLayer) && !Triggered)    //if the player is looking at the interactable and the interactable has not already been triggered, then trigger the interactable.
+            if (Physics.SphereCast(ray, lookRadius, out hit, 30f, interactionLayer) && !Triggered)    //if the player is looking at the interactable and the interactable has not already been triggered, then trigger the interactable.
             {
-                MathUtilities.Timer(ref time);
-
-                if(Pointer.Instance)
+                if(hit.transform == transform)
                 {
-                    float pointerTime = MathUtilities.MapValue(1,0,0,lookTime,time);
-                    Pointer.Instance.Fill(pointerTime);
-                }
+                    MathUtilities.Timer(ref time);
+                    Debug.Log("Looking at: " + transform.name);
+                    if (Pointer.Instance)
+                    {
+                        float pointerTime = MathUtilities.MapValue(1, 0, 0, lookTime, time);
+                        Pointer.Instance.Fill(pointerTime);
+                    }
 
-                if (!Triggered && time <= 0)
-                    Interact();
+                    if (!Triggered && time <= 0)
+                        Interact();
+                }
             }
             else
             {
@@ -57,6 +68,9 @@ public class Look : Interactable
         }
         else if (Triggered && isRepeatable) //If the player is not within proximity and the interable has already been triggered and the interactable is repeatable, then reset the interable.
         {
+            if (Pointer.Instance)
+                Pointer.Instance.StopFill();
+
             Reset();
             ResetTime();
         }

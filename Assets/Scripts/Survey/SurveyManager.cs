@@ -7,7 +7,6 @@ public class SurveyManager : MonoBehaviour
     public static SurveyManager Instance;
 
     public List<QuestionField> questions;
-    public GameObject previous;
 
     int currentQuestion = 0;
 
@@ -18,11 +17,14 @@ public class SurveyManager : MonoBehaviour
 
     public void Next()
     {
+        bool done = false;
         if (currentQuestion == questions.Count - 2)
         {
+            done = true;
             Submit();
         }
 
+        print("Next");
         questions[currentQuestion].gameObject.SetActive(false);
 
         if (currentQuestion >= (questions.Count - 1))
@@ -35,6 +37,7 @@ public class SurveyManager : MonoBehaviour
 
     public void Previous()
     {
+        print("Back");
         questions[currentQuestion].gameObject.SetActive(false);
 
         if (currentQuestion == 0)
@@ -51,8 +54,7 @@ public class SurveyManager : MonoBehaviour
 
         foreach (QuestionField question in questions)
             answers.Add(question.answer);
-
-        previous.SetActive(false);
+        
         Debug.Log("Survey Submitted");
         //Send to analytics
     }

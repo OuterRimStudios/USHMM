@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class UnityEventInteraction : Interaction
 {
-    public UnityEvent interactionEvent;
+    public UnityEvent interactionEvent = new UnityEvent();
 
     public override void Interact()
     {

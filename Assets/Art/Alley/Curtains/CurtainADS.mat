@@ -20,7 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _AlbedoTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: b5cabc03a82066346b6553075b4e5498, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _AlphaTexture:
@@ -99,7 +99,7 @@ Material:
     - _DETAILMOTIONN: 0
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _GlobalTurbulence: 0.234
+    - _GlobalTurbulence: 0.12
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
@@ -116,7 +116,7 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _MotionAmplitude: 2
-    - _MotionAmplitude3: 1
+    - _MotionAmplitude3: 1.5
     - _MotionNoise: 1
     - _MotionScale: 2
     - _MotionScale3: 2
@@ -124,7 +124,7 @@ Material:
     - _MotionSpacee: 0
     - _MotionSpacee_ON: 0
     - _MotionSpeed: 1
-    - _MotionSpeed3: 0.5
+    - _MotionSpeed3: 0.75
     - _MotionVariation: 2
     - _NormalIntensity: 1
     - _NormalInvertOnBackface: 0

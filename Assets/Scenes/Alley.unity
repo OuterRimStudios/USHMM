@@ -4248,7 +4248,7 @@ PrefabInstance:
     - target: {fileID: 134906460845741876, guid: abfbae83a3823274bac1dc70d0e60fcf,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 16.585
+      value: 16.613
       objectReference: {fileID: 0}
     - target: {fileID: 134906460845741876, guid: abfbae83a3823274bac1dc70d0e60fcf,
         type: 3}
@@ -5833,7 +5833,7 @@ PrefabInstance:
     - target: {fileID: 134906460845741876, guid: abfbae83a3823274bac1dc70d0e60fcf,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.177
+      value: 6.224
       objectReference: {fileID: 0}
     - target: {fileID: 134906460845741876, guid: abfbae83a3823274bac1dc70d0e60fcf,
         type: 3}
@@ -11121,7 +11121,7 @@ MonoBehaviour:
   gustAmplitude: 0.3
   gustSpeed: 1.65
   gustScale: 1
-  transitionSpeed: 0.5
+  transitionSpeed: 0.25
 --- !u!1001 &1066479231
 PrefabInstance:
   m_ObjectHideFlags: 0

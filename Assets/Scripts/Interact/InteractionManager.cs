@@ -26,7 +26,8 @@ public class InteractionManager : MonoBehaviour
 
     public void Interact(Interaction newInteraction)
     {
-        currentInteraction?.StopInteraction();
+        if(newInteraction != currentInteraction)
+            currentInteraction?.StopInteraction();
         currentInteraction = newInteraction;
         string sceneName = SceneManager.GetActiveScene().name;
         interactionCount++;

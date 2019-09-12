@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Proximity : Interactable
 {
+    public bool stopInteractionOnExit;
+
     public override void Start()
     {
         base.Start();
@@ -18,9 +20,11 @@ public class Proximity : Interactable
     {
         base.CheckProximity();
 
-        if(!Triggered && InProximity)                               //If this Interactable has not been triggered and the Player is within proximity distance, Trigger the event.
+        if (!Triggered && InProximity)                               //If this Interactable has not been triggered and the Player is within proximity distance, Trigger the event.
             Interact();
-        else if(Triggered && isRepeatable && !InProximity)          //If this Interactable has already beed triggered and your no longer within proximity and this event can be repeated, Reset the event.
+        else if (!InProximity && Triggered && stopInteractionOnExit)
+            StopInteract();
+        else if (Triggered && isRepeatable && !InProximity)          //If this Interactable has already beed triggered and your no longer within proximity and this event can be repeated, Reset the event.
             Reset();
     }
 }

@@ -32,6 +32,12 @@ public class Interactable : MonoBehaviour
             interaction.Interact();
     }
 
+    public virtual void StopInteract()
+    {
+        foreach (Interaction interaction in interactions)
+            interaction.StopInteraction();
+    }
+
     public virtual void Update()
     {
         if (!useProximity) return;

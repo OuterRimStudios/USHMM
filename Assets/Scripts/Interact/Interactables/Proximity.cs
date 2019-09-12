@@ -13,7 +13,6 @@ public class Proximity : Interactable
     public override void Interact()
     {
         base.Interact();
-        print("Triggered");
     }
 
     public override void CheckProximity()

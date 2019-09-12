@@ -14,6 +14,7 @@ public class AudioInteraction : Interaction
 
     public override void StopInteraction()
     {
-        audioSource.Stop();
+        if(!dontInterupt)
+            audioSource.Stop();
     }
 }

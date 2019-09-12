@@ -21,7 +21,7 @@ public class Interactable : MonoBehaviour
     public virtual void Start()
     {
         if(useProximity)
-            Player = GameObject.Find("Player").transform;
+            Player = Camera.main.transform;
     }
 
     public virtual void Interact()

@@ -23,7 +23,7 @@ public class EnableInteraction : Interaction
 
     public override void StopInteraction()
     {
-        if (toggled) return;
+        if (toggled || dontInterupt) return;
         foreach (Behaviour behaviour in behaviours)
             behaviour.enabled = false;
     }

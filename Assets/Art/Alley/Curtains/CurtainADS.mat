@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Curtain 1
+  m_Name: CurtainADS
   m_Shader: {fileID: 4800000, guid: a6f98e0bfaa3e474cb16d3771d0eb498, type: 3}
   m_ShaderKeywords: _ALPHAFROM_MAIN _MOTIONSPACE_LOCAL _RENDERTYPEKEY_OPAQUE
   m_LightmapFlags: 4
@@ -99,7 +99,7 @@ Material:
     - _DETAILMOTIONN: 0
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _GlobalTurbulence: 1
+    - _GlobalTurbulence: 0.234
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
@@ -115,19 +115,19 @@ Material:
     - _MOTIONN: 0
     - _Metallic: 0
     - _Mode: 0
-    - _MotionAmplitude: 1
+    - _MotionAmplitude: 2
     - _MotionAmplitude3: 1
     - _MotionNoise: 1
-    - _MotionScale: 1
-    - _MotionScale3: 1
+    - _MotionScale: 2
+    - _MotionScale3: 2
     - _MotionSpace: 1
     - _MotionSpacee: 0
     - _MotionSpacee_ON: 0
     - _MotionSpeed: 1
-    - _MotionSpeed3: 1
-    - _MotionVariation: 0
+    - _MotionSpeed3: 0.5
+    - _MotionVariation: 2
     - _NormalIntensity: 1
-    - _NormalInvertOnBackface: 1
+    - _NormalInvertOnBackface: 0
     - _NormalScale: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
@@ -138,7 +138,7 @@ Material:
     - _SETTINGS: 0
     - _SETTINGSS: 0
     - _SYMBOLL: 0
-    - _Smoothness: 0
+    - _Smoothness: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SpecularIntensity: 0
@@ -149,14 +149,14 @@ Material:
     - _ZWrite: 1
     - __dirty: 1
     m_Colors:
-    - _AlphaUVs: {r: 1, g: 1, b: 0, a: 0}
-    - _Color: {r: 0.5283019, g: 0.5283019, b: 0.5283019, a: 1}
+    - _AlphaUVs: {r: 0, g: 0, b: 0, a: 0}
+    - _Color: {r: 1, g: 0.68435407, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _LocalDirection: {r: 0, g: 0, b: 0, a: 0}
     - _MainUVs: {r: 1, g: 1, b: 0, a: 0}
-    - _MotionLocalDirection: {r: 0, g: 0, b: 0, a: 0}
-    - _MotionLocalDirection3: {r: 1, g: 1, b: 1, a: 0}
+    - _MotionLocalDirection: {r: 1, g: 0, b: 0, a: 0}
+    - _MotionLocalDirection3: {r: 1, g: 0, b: 1, a: 0}
     - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
     - _SymbolColor: {r: 1, g: 1, b: 1, a: 1}
     - _SymbolUVs: {r: 1, g: 1, b: 1, a: 0}
-    - _UVZero: {r: 1, g: 1, b: 0, a: 0}
+    - _UVZero: {r: 1, g: 1, b: 1, a: 0}

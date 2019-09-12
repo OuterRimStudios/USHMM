@@ -1,12 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR;
 using UnityEngine.InputSystem;
+using UnityEngine.XR;
 using Valve.VR;
 
-public class InputManager : MonoBehaviour
-{
+public class InputManager : MonoBehaviour {
     public static InputManager Instance;
 
     Controls controls;
@@ -26,26 +25,22 @@ public class InputManager : MonoBehaviour
     public Vector3 LeftAngularVelocity { get; private set; }
     public Vector3 RightAngularVelocity { get; private set; }
 
-    void Awake()
-    {
+    void Awake() {
         Instance = this;
         controls = new Controls();
         controls.Enable();
         //SteamVR_Input.Initialize();
     }
 
-    void OnDisable()
-    {
+    void OnDisable() {
         controls.Disable();
     }
 
-    void Update()
-    {
+    void Update() {
         GetInput();
     }
 
-    void GetInput()
-    {
+    void GetInput() {
         LeftGrip = SteamVR_Input.GetState("default", "GrabGrip", SteamVR_Input_Sources.LeftHand, false);
         RightGrip = SteamVR_Input.GetState("default", "GrabGrip", SteamVR_Input_Sources.RightHand, false);
 
@@ -60,6 +55,5 @@ public class InputManager : MonoBehaviour
 
         LeftAngularVelocity = controls.Input.LeftAngularVelocity.ReadValue<Vector3>();
         RightAngularVelocity = controls.Input.RightAngularVelocity.ReadValue<Vector3>();
-        Debug.Log(SteamVR_Input.GetState("default", "GrabGrip", SteamVR_Input_Sources.RightHand, false));
     }
 }

@@ -533,7 +533,7 @@ MonoBehaviour:
   internalProcessPath: 
   internalProcessArgs: 
   loadAdditive: 0
-  loadAsync: 1
+  loadAsync: 0
   loadingScreen: {fileID: 0}
   progressBarEmpty: {fileID: 0}
   progressBarFull: {fileID: 0}

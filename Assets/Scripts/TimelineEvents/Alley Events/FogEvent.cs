@@ -11,7 +11,6 @@ public class FogEvent : OuterRimStudios.Event
     int eventCounter;
     public override void StartEvent()
     {
-        Debug.Log("Fog Event STarted");
         base.StartEvent();
         StartCoroutine(StartFogUpdate());
     }

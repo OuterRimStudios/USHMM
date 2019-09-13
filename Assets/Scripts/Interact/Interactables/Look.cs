@@ -22,7 +22,6 @@ public class Look : Interactable
     public override void Interact()
     {
         base.Interact();
-        print("Looking");
     }
 
     void OnEnable()
@@ -45,7 +44,6 @@ public class Look : Interactable
                 if(hit.transform == transform)
                 {
                     MathUtilities.Timer(ref time);
-                    Debug.Log("Looking at: " + transform.name);
                     if (Pointer.Instance)
                     {
                         float pointerTime = MathUtilities.MapValue(0, lookTime, 1, 0, time);

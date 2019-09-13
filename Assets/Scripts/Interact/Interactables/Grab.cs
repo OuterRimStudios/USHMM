@@ -37,14 +37,12 @@ public class Grab : Interactable
     public override void Interact()
     {
         base.Interact();
-        print("Grab Interaction");
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag.Equals("Controller"))
         {
-            print("Controller touched");
             if(!controllers.Contains(other))
                 controllers.Add(other);
 

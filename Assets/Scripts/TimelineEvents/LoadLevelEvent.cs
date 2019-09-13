@@ -9,7 +9,6 @@ public class LoadLevelEvent : OuterRimStudios.Event
 
     public override void StartEvent()
     {
-        print("should load: " + sceneName);
         SteamVR_LoadLevel.Begin(sceneName);
     }
 }

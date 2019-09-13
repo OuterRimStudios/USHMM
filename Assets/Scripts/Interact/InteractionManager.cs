@@ -31,12 +31,10 @@ public class InteractionManager : MonoBehaviour
         currentInteraction = newInteraction;
         string sceneName = SceneManager.GetActiveScene().name;
         interactionCount++;
-        Debug.Log("interaction object: " + newInteraction.gameObject.name);
         Analytics.CustomEvent(sceneName, new Dictionary<string, object> { { "object", newInteraction.gameObject.name } });
         if (!initialTimeSent)
         {
             initialTimeSent = true;
-            Debug.Log("initial interaction time: " + Time.timeSinceLevelLoad);
             Analytics.CustomEvent(sceneName, new Dictionary<string, object> { { "initialInteractionTime", Time.timeSinceLevelLoad } });
         }
         else
@@ -48,8 +46,6 @@ public class InteractionManager : MonoBehaviour
     //This function is only called when a new scene is loaded
     void SendAnalytics(Scene currentScene)
     {
-        Debug.Log("average time: " + totalTimeBetweenInteractions / interactionCount);
-        Debug.Log("interactionCount: " + interactionCount);
         Analytics.CustomEvent(currentScene.name, new Dictionary<string, object> {
             { "averageTimeBetweenInteractions", totalTimeBetweenInteractions/interactionCount },
             {"numberOfInteractions", interactionCount}

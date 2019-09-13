@@ -49,7 +49,6 @@ public class InputManager : MonoBehaviour
         LeftGrip = SteamVR_Input.GetState("default", "GrabGrip", SteamVR_Input_Sources.LeftHand, false);
         RightGrip = SteamVR_Input.GetState("default", "GrabGrip", SteamVR_Input_Sources.RightHand, false);
         
-        Debug.Log("Grab Object: " + InputManager.Instance.RightGrip);
         //LeftPosition = controls.Input.LeftPosition.ReadValue<Vector3>();
         //RightPosition = controls.Input.RightPosition.ReadValue<Vector3>();
 

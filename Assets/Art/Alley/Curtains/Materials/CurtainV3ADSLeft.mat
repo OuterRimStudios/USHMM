@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CurtainV3ADSLeft
+  m_Shader: {fileID: 4800000, guid: a6f98e0bfaa3e474cb16d3771d0eb498, type: 3}
+  m_ShaderKeywords: _ALPHAFROM_MAIN _MOTIONSPACE_LOCAL _RENDERTYPEKEY_OPAQUE
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlbedoTex:
+        m_Texture: {fileID: 2800000, guid: 1759c4b65cfe1b949b5d6557b2380cb6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _AlphaTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalTex:
+        m_Texture: {fileID: 2800000, guid: 314cfe3abf27b3641a75be75a21cab5c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SurfaceTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SymbolTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ADSStandardLitCloth: 1
+    - _ADSStandardLitGeneric: 1
+    - _ADVANCEDD: 0
+    - _ALPHAA: 0
+    - _AlphaFrom: 0
+    - _AlphaFromm: 0
+    - _BatchingInfo: 0
+    - _BumpScale: 1
+    - _CLOTHH: 0
+    - _CLOTHMOTIONN: 0
+    - _CullMode: 0
+    - _Cutoff: 0.5
+    - _DETAILMOTIONN: 0
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _GlobalTurbulence: 0.12
+    - _GlossMapScale: 1
+    - _Glossiness: 0
+    - _GlossyReflections: 1
+    - _Internal_ADS: 1
+    - _Internal_DebugMask: 1
+    - _Internal_DebugVariation: 1
+    - _Internal_LitStandard: 1
+    - _Internal_TypeCloth: 1
+    - _Internal_TypeGeneric: 1
+    - _Internal_UnityToBoxophobic: 1
+    - _Internal_Version: 232
+    - _MAINN: 0
+    - _MOTIONN: 0
+    - _Metallic: 0
+    - _Mode: 0
+    - _MotionAmplitude: 2
+    - _MotionAmplitude3: 1.5
+    - _MotionNoise: 1
+    - _MotionScale: 2
+    - _MotionScale3: 2
+    - _MotionSpace: 1
+    - _MotionSpacee: 0
+    - _MotionSpacee_ON: 0
+    - _MotionSpeed: 1
+    - _MotionSpeed3: 1.5
+    - _MotionVariation: 2
+    - _NormalIntensity: 1
+    - _NormalInvertOnBackface: 0
+    - _NormalScale: 1
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _RENDERINGG: 0
+    - _RenderFaces: 0
+    - _RenderType: 0
+    - _RenderTypee: 0
+    - _SETTINGS: 0
+    - _SETTINGSS: 0
+    - _SYMBOLL: 0
+    - _Smoothness: 0
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SpecularIntensity: 0
+    - _SrcBlend: 1
+    - _SymbolMode: 0
+    - _SymbolRotation: 0
+    - _UVSec: 0
+    - _ZWrite: 1
+    - __dirty: 1
+    m_Colors:
+    - _AlphaUVs: {r: 0, g: 0, b: 0, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _LocalDirection: {r: 0, g: 0, b: 0, a: 0}
+    - _MainUVs: {r: 1, g: 1, b: 0, a: 0}
+    - _MotionLocalDirection: {r: 0, g: 0, b: 1, a: 0}
+    - _MotionLocalDirection3: {r: -2, g: 0, b: 1.3, a: 0}
+    - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SymbolColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SymbolUVs: {r: 1, g: 1, b: 1, a: 0}
+    - _UVZero: {r: 1, g: 1, b: 1, a: 0}

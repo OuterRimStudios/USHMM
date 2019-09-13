@@ -657,10 +657,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: 4eddf7da-5ac0-490d-ac72-6a613a936477
+  cloudProjectId: 
   framebufferDepthMemorylessMode: 0
-  projectName: USHMM
-  organizationId: outerrimstudios
+  projectName: 
+  organizationId: 
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 1
   disableOldInputManagerSupport: 0

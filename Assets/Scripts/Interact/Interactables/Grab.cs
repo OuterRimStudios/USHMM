@@ -43,11 +43,13 @@ public class Grab : Interactable
     {
         if (other.tag.Equals("Controller"))
         {
-            if(!controllers.Contains(other))
+            if (!controllers.Contains(other))
                 controllers.Add(other);
 
             ControllerNear = true;
         }
+        else
+            LetGo();
     }
 
     private void OnTriggerExit(Collider other)
@@ -86,17 +88,7 @@ public class Grab : Interactable
         {
             if ((controller.handedness == Handedness.Left ? InputManager.Instance.LeftGrip : InputManager.Instance.RightGrip) == false) //Check the handedness of this controller to determine when the player lets go of grip button
             {
-                GrabManager.Instance.Drop(controller.handedness);
-                transform.SetParent(null);  //unchild this object from the controller
-
-                rb.useGravity = true;   //re enable the gravity of the object and set isKinematic back to false
-                rb.isKinematic = false;
-
-                rb.velocity = (controller.handedness == Handedness.Left ? InputManager.Instance.LeftVelocity : InputManager.Instance.RightVelocity) / 2;
-                rb.angularVelocity = controller.handedness == Handedness.Left ? InputManager.Instance.LeftAngularVelocity : InputManager.Instance.RightAngularVelocity;
-
-                IsGrabbed = false;  //the object is no longer being grabbed
-                controller = null;  //clear the cached controller
+                LetGo();
             }
         }
 
@@ -107,6 +99,28 @@ public class Grab : Interactable
             if(time <= 0)   //If this timer hits 0, then reset the object's values
                 Reset();
         }
+    }
+
+    void LetGo()
+    {
+        if(controller)
+            GrabManager.Instance.Drop(controller.handedness);
+        transform.SetParent(null);  //unchild this object from the controller
+
+        if(rb)
+        {
+            rb.useGravity = true;   //re enable the gravity of the object and set isKinematic back to false
+            rb.isKinematic = false;
+        }
+
+        if(controller && rb)
+        {
+            rb.velocity = (controller.handedness == Handedness.Left ? InputManager.Instance.LeftVelocity : InputManager.Instance.RightVelocity) / 2;
+            rb.angularVelocity = controller.handedness == Handedness.Left ? InputManager.Instance.LeftAngularVelocity : InputManager.Instance.RightAngularVelocity;
+        }
+
+        IsGrabbed = false;  //the object is no longer being grabbed
+        controller = null;  //clear the cached controller
     }
 
     void GrabObject(Controller controller)

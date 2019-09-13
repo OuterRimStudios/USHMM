@@ -103,14 +103,21 @@ public class Grab : Interactable
 
     void LetGo()
     {
-        GrabManager.Instance.Drop(controller.handedness);
+        if(controller)
+            GrabManager.Instance.Drop(controller.handedness);
         transform.SetParent(null);  //unchild this object from the controller
 
-        rb.useGravity = true;   //re enable the gravity of the object and set isKinematic back to false
-        rb.isKinematic = false;
+        if(rb)
+        {
+            rb.useGravity = true;   //re enable the gravity of the object and set isKinematic back to false
+            rb.isKinematic = false;
+        }
 
-        rb.velocity = (controller.handedness == Handedness.Left ? InputManager.Instance.LeftVelocity : InputManager.Instance.RightVelocity) / 2;
-        rb.angularVelocity = controller.handedness == Handedness.Left ? InputManager.Instance.LeftAngularVelocity : InputManager.Instance.RightAngularVelocity;
+        if(controller && rb)
+        {
+            rb.velocity = (controller.handedness == Handedness.Left ? InputManager.Instance.LeftVelocity : InputManager.Instance.RightVelocity) / 2;
+            rb.angularVelocity = controller.handedness == Handedness.Left ? InputManager.Instance.LeftAngularVelocity : InputManager.Instance.RightAngularVelocity;
+        }
 
         IsGrabbed = false;  //the object is no longer being grabbed
         controller = null;  //clear the cached controller

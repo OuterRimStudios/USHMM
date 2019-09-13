@@ -9,6 +9,7 @@ public enum FadeType { FadeIn, FadeOut }
 
 public class FadeEvent : OuterRimStudios.Event
 {
+    public bool stopFade;
     public Image fadePanel;
     public float fadeSpeed = 1;
 
@@ -44,22 +45,35 @@ public class FadeEvent : OuterRimStudios.Event
 
     public void StartEvent(bool fadeIn)
     {
-        color.a = fadeIn == true ? 0 : 1;
-        StartCoroutine(Fade(fadeIn == true ? 1 : 0));
+        if(!stopFade)
+        {
+            color.a = fadeIn == true ? 0 : 1;
+            StartCoroutine(Fade(fadeIn == true ? 1 : 0));
+        }
+        else
+        {
+            if (loadScene)
+                SceneManager.LoadScene(sceneName);
+        }
     }
 
     IEnumerator Fade(int value)
     {
         yield return new WaitUntil(() => Faded(value));
-        color.a = value;
+
+        if(!stopFade)
+            color.a = value;
         if (loadScene)
             SceneManager.LoadScene(sceneName);
     }
 
     bool Faded(int value)
     {
-        color.a = Mathf.MoveTowards(color.a, value, fadeSpeed * Time.deltaTime);
-        fadePanel.color = color;
+        if(!stopFade)
+        {
+            color.a = Mathf.MoveTowards(color.a, value, fadeSpeed * Time.deltaTime);
+            fadePanel.color = color;
+        }
         return fadePanel.color.a == value;
     }
 }

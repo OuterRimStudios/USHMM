@@ -112,6 +112,7 @@ public class Grab : Interactable
 
     void GrabObject(Controller controller)
     {
+
         if ((controller.handedness == Handedness.Left ? InputManager.Instance.LeftGrip : InputManager.Instance.RightGrip) == true) //Check the controllers handedness in order to see if the grip button on that controller has been pressed
         {
             wasGrabbed = true; //Store the fact that this object has been grabbed recently

@@ -86,6 +86,7 @@ public class Grab : Interactable
         {
             if ((controller.handedness == Handedness.Left ? InputManager.Instance.LeftGrip : InputManager.Instance.RightGrip) == false) //Check the handedness of this controller to determine when the player lets go of grip button
             {
+                GrabManager.Instance.Drop(controller.handedness);
                 transform.SetParent(null);  //unchild this object from the controller
 
                 rb.useGravity = true;   //re enable the gravity of the object and set isKinematic back to false
@@ -110,10 +111,12 @@ public class Grab : Interactable
 
     void GrabObject(Controller controller)
     {
-
+        if (GrabManager.Instance.IsBusy(controller.handedness)) return;
         if ((controller.handedness == Handedness.Left ? InputManager.Instance.LeftGrip : InputManager.Instance.RightGrip) == true) //Check the controllers handedness in order to see if the grip button on that controller has been pressed
         {
-            wasGrabbed = true; //Store the fact that this object has been grabbed recently
+            GrabManager.Instance.Grab(controller.handedness);
+
+                wasGrabbed = true; //Store the fact that this object has been grabbed recently
             if (HasInteraction && !Triggered)   //If this is a grabble object that triggers an event and the event has not been triggered already, then trigger the event
                 Interact();
 

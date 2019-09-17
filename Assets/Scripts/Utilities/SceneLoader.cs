@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Debug = UnityEngine.Debug;
+using Valve.VR;
 
 public class SceneLoader : MonoBehaviour
 {
@@ -36,7 +37,7 @@ public class SceneLoader : MonoBehaviour
     {
         if (Input.inputString.Length != 0)
         {
-#if UNITY_STANDALONE
+            /*
             for (int i = 0; i < sceneManifest.Count; i++)
             {
                 if (Input.inputString[0].ToString() == sceneManifest[i].sceneIndex.ToString())
@@ -54,19 +55,21 @@ public class SceneLoader : MonoBehaviour
                     }
                 }
             }
-#endif
-#if UNITY_EDITOR
+            */
             try
             {
                 int sceneIndex = Convert.ToInt32(Input.inputString[0].ToString()) - 1;
-                if (SceneManager.GetSceneByBuildIndex(sceneIndex) != null)
-                    SceneManager.LoadScene(sceneIndex);
+                Scene _scene = SceneManager.GetSceneByBuildIndex(sceneIndex);
+                if (_scene != null)
+                {
+                    SteamVR_LoadLevel.Begin(_scene.name);
+                    //SceneManager.LoadScene(sceneIndex);
+                }
             }
             catch (Exception e)
             {
                 Debug.LogError(e);
             }
-#endif
         }
     }
 }

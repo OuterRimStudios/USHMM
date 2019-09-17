@@ -36,7 +36,9 @@ public class SceneLoader : MonoBehaviour
 
     void Update()
     {
-        if (Input.inputString.Length != 0)
+        if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.Home))
+            steamLevelLoader?.Trigger(0);
+        else if (Input.inputString.Length != 0)
         {
             /*
             for (int i = 0; i < sceneManifest.Count; i++)
@@ -71,39 +73,5 @@ public class SceneLoader : MonoBehaviour
                 Debug.LogError(e);
             }
         }
-    }
-}
-
-public class SceneManifest
-{
-    public const string BUILD_NAME = "/Build.exe";
-
-    public static void CreateSceneManifest(List<string> folderNames, string manifestPath)
-    {
-        List<SceneInfo> sceneInfoList = new List<SceneInfo>();
-        for (int i = 0; i < folderNames.Count; i++)
-        {
-            //Debug.Log(folderNames[i]);
-            sceneInfoList.Add(new SceneInfo(i + 1, folderNames[i]));
-        }
-
-        XMLOp.Serialize(sceneInfoList, manifestPath + "/SceneManifest.xml");
-    }
-}
-
-public class SceneInfo
-{
-    public int sceneIndex;
-    public string folderName;
-
-    public SceneInfo()
-    {
-        sceneIndex = -1;
-        folderName = "";
-    }
-    public SceneInfo(int _sceneIndex, string _folderName)
-    {
-        sceneIndex = _sceneIndex;
-        folderName = _folderName;
     }
 }

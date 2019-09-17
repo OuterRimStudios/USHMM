@@ -530,6 +530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelName: 
+  levelIndex: 0
   internalProcessPath: 
   internalProcessArgs: 
   loadAdditive: 0
@@ -613,7 +614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b23de2a49e8d79342968e9ad1d80a895, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Office
+  steamLevelLoader: {fileID: 1339404955}
 --- !u!1 &1426259242
 GameObject:
   m_ObjectHideFlags: 0
@@ -874,9 +875,9 @@ PlayableDirector:
   - key: {fileID: 3539888062885169508, guid: 85bdc966df2fbda4590ca685803654f0, type: 2}
     value: {fileID: 1096455487}
   - key: {fileID: -494786679352392356, guid: 85bdc966df2fbda4590ca685803654f0, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1426259243}
   - key: {fileID: 1945550734239850060, guid: 85bdc966df2fbda4590ca685803654f0, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1426259243}
   m_ExposedReferences:
     m_References:
     - ebd6dfbb264ccdf4389e91131b4cbfa6: {fileID: 1096455485}

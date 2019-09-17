@@ -11,8 +11,8 @@ public class Interaction : MonoBehaviour
 
     public virtual void Interact()
     {
-        if(!dontInterupt)
-        OnInteracted?.Invoke(this);
+        if (!dontInterupt)
+            OnInteracted?.Invoke(this);
     }
 
     public virtual void StopInteraction()

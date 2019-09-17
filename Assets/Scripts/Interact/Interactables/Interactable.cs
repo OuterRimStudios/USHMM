@@ -18,9 +18,12 @@ public class Interactable : MonoBehaviour
     public bool Triggered { get; set; }
     public Transform Player { get; protected set; }
 
+    public float TotalTimeInProximity { get; protected set; }
+    float timeOfEnterProximity;
+
     public virtual void Start()
     {
-        if(useProximity)
+        if (useProximity)
             Player = Camera.main.transform;
     }
 
@@ -48,6 +51,23 @@ public class Interactable : MonoBehaviour
     public virtual void CheckProximity()
     {
         InProximity = MathUtilities.CheckDistance(Player.position, transform.position) < proximityDistance;
+        if (InProximity && timeOfEnterProximity == 0)
+        {
+            timeOfEnterProximity = Time.timeSinceLevelLoad;
+        }
+        if (!InProximity && timeOfEnterProximity > 0)
+        {
+            timeOfEnterProximity = 0;
+            InteractionManager.inProximityCount++;
+        }
+
+        if (InProximity)
+            InteractionManager.totalTimeInProximity += Time.deltaTime;
+    }
+
+    public virtual float GetTotalTimeInProximity()
+    {
+        return TotalTimeInProximity;
     }
 
     public virtual void Reset()
@@ -63,7 +83,7 @@ public class Interactable : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        if(useProximity)
+        if (useProximity)
             Gizmos.DrawWireSphere(transform.position, proximityDistance);
     }
 }

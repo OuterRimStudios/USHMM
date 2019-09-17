@@ -11543,8 +11543,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 0
-  MaxDistance: 4
+  MinDistance: 1.980198
+  MaxDistance: 3
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -12010,8 +12010,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontInterupt: 0
-  audioClips: []
-  isRepeatable: 0
+  audioClips:
+  - {fileID: 8300000, guid: cf6fc10bff1adbf41b8e9d7b49f6bb91, type: 3}
+  isRepeatable: 1
 --- !u!1 &973296169
 GameObject:
   m_ObjectHideFlags: 0
@@ -12821,7 +12822,7 @@ PrefabInstance:
     - target: {fileID: 3769196734585132897, guid: 553e23fa439e80a4cb760be0b176e819,
         type: 3}
       propertyPath: MinDistance
-      value: 0
+      value: 1.980198
       objectReference: {fileID: 0}
     - target: {fileID: 3769196734585132897, guid: 553e23fa439e80a4cb760be0b176e819,
         type: 3}
@@ -12831,7 +12832,7 @@ PrefabInstance:
     - target: {fileID: 3769196734585132897, guid: 553e23fa439e80a4cb760be0b176e819,
         type: 3}
       propertyPath: MaxDistance
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3769196734585132897, guid: 553e23fa439e80a4cb760be0b176e819,
         type: 3}
@@ -13087,8 +13088,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 0
-  MaxDistance: 4
+  MinDistance: 1.980198
+  MaxDistance: 3
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -13418,8 +13419,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 0
-  MaxDistance: 4
+  MinDistance: 1.980198
+  MaxDistance: 3
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -19769,7 +19770,7 @@ PrefabInstance:
     - target: {fileID: 3769196734585132897, guid: 553e23fa439e80a4cb760be0b176e819,
         type: 3}
       propertyPath: MinDistance
-      value: 0
+      value: 1.980198
       objectReference: {fileID: 0}
     - target: {fileID: 3769196734585132897, guid: 553e23fa439e80a4cb760be0b176e819,
         type: 3}
@@ -19779,7 +19780,7 @@ PrefabInstance:
     - target: {fileID: 3769196734585132897, guid: 553e23fa439e80a4cb760be0b176e819,
         type: 3}
       propertyPath: MaxDistance
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3769196734585132897, guid: 553e23fa439e80a4cb760be0b176e819,
         type: 3}
@@ -24958,8 +24959,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 0
-  MaxDistance: 4
+  MinDistance: 1.980198
+  MaxDistance: 3
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -29951,8 +29952,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dontInterupt: 1
-  audioClips: []
-  isRepeatable: 0
+  audioClips:
+  - {fileID: 8300000, guid: d780476f760ba834a938320d46423e87, type: 3}
+  isRepeatable: 1
 --- !u!23 &779625399360524518
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30627,8 +30629,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 0
-  MaxDistance: 4
+  MinDistance: 1.980198
+  MaxDistance: 3
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -31727,8 +31729,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 0
-  MaxDistance: 4
+  MinDistance: 1.980198
+  MaxDistance: 3
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -32373,7 +32375,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 0
-  MinDistance: 1.79
+  MinDistance: 1.91
   MaxDistance: 3.85
   Pan2D: 0
   rolloffMode: 0
@@ -32555,8 +32557,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 0
-  MaxDistance: 4
+  MinDistance: 1.980198
+  MaxDistance: 3
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0

@@ -43,5 +43,7 @@ public class ToggleAudioInteraction : Interaction
             foreach (AudioSource source in initialSources)
                 source.Stop();
         }
+
+        toggle = !toggle;
     }
 }

@@ -10,6 +10,7 @@ using Valve.VR;
 
 public class SceneLoader : MonoBehaviour
 {
+    public SteamVR_LoadLevel steamLevelLoader;
     string rootPath;
 #if UNITY_STANDALONE
     List<SceneInfo> sceneManifest = new List<SceneInfo>();
@@ -59,10 +60,9 @@ public class SceneLoader : MonoBehaviour
             try
             {
                 int sceneIndex = Convert.ToInt32(Input.inputString[0].ToString()) - 1;
-                Scene _scene = SceneManager.GetSceneByBuildIndex(sceneIndex);
-                if (_scene != null)
+                if (SceneManager.GetSceneByBuildIndex(sceneIndex) != null)
                 {
-                    SteamVR_LoadLevel.Begin(_scene.name);
+                    steamLevelLoader?.Trigger(sceneIndex);
                     //SceneManager.LoadScene(sceneIndex);
                 }
             }

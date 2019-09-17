@@ -26,6 +26,7 @@ namespace Valve.VR
 
         // Name of level to load.
         public string levelName;
+        public int levelIndex;
 
         // Name of internal process to launch (instead of levelName).
         public string internalProcessPath;
@@ -100,6 +101,15 @@ namespace Valve.VR
         {
             if (!loading && !string.IsNullOrEmpty(levelName))
                 StartCoroutine(LoadLevel());
+        }
+
+        public void Trigger(int _levelIndex)
+        {
+            if (!loading)
+            {
+                levelIndex = _levelIndex;
+                StartCoroutine(LoadLevel());
+            }
         }
 
         // Helper function to quickly and simply load a level from script.
@@ -361,7 +371,7 @@ namespace Valve.VR
                 if (loadAsync)
                 {
                     Application.backgroundLoadingPriority = ThreadPriority.Low;
-                    async = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(levelName, mode);
+                    async = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(levelIndex, mode);
 
                     // Performing this in a while loop instead seems to help smooth things out.
                     //yield return async;
@@ -372,7 +382,7 @@ namespace Valve.VR
                 }
                 else
                 {
-                    UnityEngine.SceneManagement.SceneManager.LoadScene(levelName, mode);
+                    UnityEngine.SceneManagement.SceneManager.LoadScene(levelIndex, mode);
                 }
             }
 

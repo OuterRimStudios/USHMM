@@ -5802,7 +5802,7 @@ MonoBehaviour:
     color: {r: 0.999999, g: 0.8887342, b: 0.6397692, a: 1}
   ambientInjection:
     enable: 1
-    strength: -57.33
+    strength: -64.5
     useNoiseMask: 1
     useNoiseMaskLevels: 1
     noiseMaskLevelParameters:
@@ -10378,7 +10378,7 @@ Transform:
   m_LocalScale: {x: 0.84, y: 0.84, z: 0.84}
   m_Children: []
   m_Father: {fileID: 4399801417374931742}
-  m_RootOrder: 65
+  m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 3.4810002, y: -207.25499, z: -16.746}
 --- !u!65 &868183930
 BoxCollider:
@@ -10491,41 +10491,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 868183928}
   m_Mesh: {fileID: 2323526836899359850, guid: d42df0df6b42f8748b0fe71251b82a7e, type: 3}
---- !u!84 &873446041
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  serializedVersion: 3
-  m_Width: 512
-  m_Height: 512
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthFormat: 0
-  m_ColorFormat: 8
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1001 &891366304
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12941,7 +12906,7 @@ MonoBehaviour:
   useScattering: 1
   scattering: 0.7
   useAmbientLighting: 1
-  ambientLightingStrength: 0.1
+  ambientLightingStrength: 0.94
   useColor: 1
   color: {r: 0.5, g: 0.49999973, b: 0.4999995, a: 1}
   colorStrength: 0.5
@@ -15541,7 +15506,7 @@ Transform:
   m_LocalScale: {x: 0.8026, y: 0.8026, z: 0.8026}
   m_Children: []
   m_Father: {fileID: 4399801417374931742}
-  m_RootOrder: 181
+  m_RootOrder: 171
   m_LocalEulerAnglesHint: {x: 5.4300003, y: -39.951, z: -22.722002}
 --- !u!65 &1410786875
 BoxCollider:
@@ -16902,6 +16867,41 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 994165920}
   m_PrefabAsset: {fileID: 0}
+--- !u!84 &1621370714
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  serializedVersion: 3
+  m_Width: 512
+  m_Height: 512
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthFormat: 0
+  m_ColorFormat: 8
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1001 &1641075759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18302,7 +18302,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 873446041}
+      objectReference: {fileID: 1621370714}
     - target: {fileID: 6300121688840387470, guid: 19e43cf7d762800478fe2ebeb09f2b00,
         type: 3}
       propertyPath: speed
@@ -41905,6 +41905,7 @@ Transform:
   - {fileID: 742819434}
   - {fileID: 1559184333}
   - {fileID: 855103243}
+  - {fileID: 868183929}
   - {fileID: 6754483327523419994}
   - {fileID: 6754483328670627440}
   - {fileID: 6754483328093003936}
@@ -41915,9 +41916,9 @@ Transform:
   - {fileID: 6754483327822957676}
   - {fileID: 6754483326850503530}
   - {fileID: 6754483326765840659}
-  - {fileID: 868183929}
-  - {fileID: 6754483327541328705}
   - {fileID: 4470009568530767545}
+  - {fileID: 6754483327541328705}
+  - {fileID: 5468221313787216739}
   - {fileID: 6754483328723380424}
   - {fileID: 6754483328075135100}
   - {fileID: 6754483327176890170}
@@ -41927,7 +41928,6 @@ Transform:
   - {fileID: 6754483327787495241}
   - {fileID: 6754483327106037670}
   - {fileID: 6754483327978118773}
-  - {fileID: 5468221313787216739}
   - {fileID: 257663413}
   - {fileID: 6754483328273839708}
   - {fileID: 6754483327452806925}
@@ -42021,17 +42021,17 @@ Transform:
   - {fileID: 47798439}
   - {fileID: 800711440}
   - {fileID: 1116417339}
-  - {fileID: 1952842598}
+  - {fileID: 1410786874}
   - {fileID: 1066479232}
   - {fileID: 1063616095}
   - {fileID: 491973171}
   - {fileID: 744863617}
   - {fileID: 591131980}
+  - {fileID: 1952842598}
   - {fileID: 317474038}
   - {fileID: 424165349}
   - {fileID: 1659350509}
   - {fileID: 1332298758}
-  - {fileID: 1410786874}
   - {fileID: 955718195}
   m_Father: {fileID: 647965504}
   m_RootOrder: 17
@@ -42231,7 +42231,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4399801417374931742}
-  m_RootOrder: 67
+  m_RootOrder: 66
   m_LocalEulerAnglesHint: {x: 35.723003, y: 10.788, z: 0}
 --- !u!4 &4474573240349643490
 Transform:
@@ -46634,7 +46634,7 @@ Transform:
   m_Children:
   - {fileID: 7997783719268963636}
   m_Father: {fileID: 4399801417374931742}
-  m_RootOrder: 77
+  m_RootOrder: 68
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &5474918313401482316
 Transform:

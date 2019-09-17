@@ -26,7 +26,8 @@ public class Interactable : MonoBehaviour
 
     public virtual void Interact()
     {
-        Triggered = true;
+        if(!isRepeatable)
+            Triggered = true;
 
         foreach (Interaction interaction in interactions)
             interaction.Interact();

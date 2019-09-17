@@ -19,7 +19,9 @@ public class AudioInteraction : Interaction
         if (!isRepeatable) return;
 
         base.Interact();
-        audioSource.PlayOneShot(audioClips[Random.Range(0, audioClips.Length)]);
+
+        if(!audioSource.isPlaying)
+            audioSource.PlayOneShot(audioClips[Random.Range(0, audioClips.Length)]);
     }
 
     public override void StopInteraction()

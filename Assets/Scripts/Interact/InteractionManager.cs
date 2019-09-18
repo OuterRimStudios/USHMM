@@ -55,6 +55,8 @@ public class InteractionManager : MonoBehaviour
         {
             Analytics.CustomEvent(currentScene.name, new Dictionary<string, object> {
                 { "averageTimeBetweenInteractions", 0 },
+                { "totalTimeInProximity", 0 },
+                { "averageTimeInProximity", 0 },
                 { "numberOfInteractions", interactionCount }
             });
         }
@@ -63,6 +65,8 @@ public class InteractionManager : MonoBehaviour
 
             Analytics.CustomEvent(currentScene.name, new Dictionary<string, object> {
                 { "averageTimeBetweenInteractions", totalTimeBetweenInteractions/interactionCount },
+                { "totalTimeInProximity", totalTimeInProximity },
+                { "averageTimeInProximity", totalTimeInProximity/inProximityCount },
                 { "numberOfInteractions", interactionCount }
             });
             /*

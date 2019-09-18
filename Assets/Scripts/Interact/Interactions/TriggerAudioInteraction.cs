@@ -15,7 +15,7 @@ public class TriggerAudioInteraction : Interaction
 
     private void OnTriggerEnter(Collider other)
     {
-        if(!other.tag.Equals("Controller"))
+        if (!other.tag.Equals("Controller") && source)
             source.PlayOneShot(clips[Random.Range(0, clips.Length)]);
     }
 }

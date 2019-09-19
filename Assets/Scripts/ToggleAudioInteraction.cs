@@ -36,8 +36,13 @@ public class ToggleAudioInteraction : Interaction
         {
             foreach(AudioSource source in secondarySources)
             {
-                source.clip = secondarySounds[Random.Range(0, secondarySounds.Length)];
-                source.Play();
+                if (secondarySounds.Length > 0)
+                {
+                    source.clip = secondarySounds[Random.Range(0, secondarySounds.Length)];
+                    source.Play();
+                }
+                else
+                    source.Stop();
             }
 
             foreach (AudioSource source in initialSources)

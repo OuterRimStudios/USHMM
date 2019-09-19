@@ -551,8 +551,8 @@ MonoBehaviour:
   bottom: {fileID: 0}
   backgroundColor: {r: 0, g: 0, b: 0, a: 1}
   showGrid: 0
-  fadeOutTime: 0.5
-  fadeInTime: 0.5
+  fadeOutTime: 5
+  fadeInTime: 5
   postLoadSettleTime: 0
   loadingScreenFadeInTime: 1
   loadingScreenFadeOutTime: 0.25
@@ -615,6 +615,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   steamLevelLoader: {fileID: 1339404955}
+  loadLevel: 1
+  canvasIndicator: {fileID: 0}
 --- !u!1 &1426259242
 GameObject:
   m_ObjectHideFlags: 0

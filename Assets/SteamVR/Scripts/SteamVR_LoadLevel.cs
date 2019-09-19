@@ -240,6 +240,14 @@ namespace Valve.VR
             }
         }
 
+        public void Fade()
+        {
+            SteamVR_Events.LoadingFadeOut.Send(fadeOutTime);
+            var compositor = OpenVR.Compositor;
+            if (compositor != null)
+                compositor.FadeToColor(fadeOutTime, backgroundColor.r, backgroundColor.g, backgroundColor.b, backgroundColor.a, false);
+        }
+
         // Corourtine to handle all the steps across loading boundaries.
         IEnumerator LoadLevel()
         {

@@ -11,12 +11,29 @@ using Valve.VR;
 public class LoadLevelEvent : OuterRimStudios.Event
 {
     public SteamVR_LoadLevel steamLevelLoader;
+    public bool loadLevel;
+    public GameObject canvasIndicator;
 
     public override void StartEvent()
     {
-        int sceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
-        steamLevelLoader?.Trigger(sceneIndex);
+        if (loadLevel)
+        {
+            int sceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+            steamLevelLoader?.Trigger(sceneIndex);
+        }
+        else
+        {
+            steamLevelLoader.Fade();
+            StartCoroutine(EnableCanvasIndicator());
+        }
     }
+
+    IEnumerator EnableCanvasIndicator()
+    {
+        yield return new WaitForSeconds(steamLevelLoader.fadeOutTime);
+        canvasIndicator.SetActive(true);
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.Home))

@@ -16,6 +16,8 @@ public class MusicManager : MonoBehaviour
     public float musicTransitionSpeed = .5f;
     public float sourceTransitionSpeed = 1;
 
+    AudioSource oldSource;
+
     private void Awake()
     {
         Instance = this;
@@ -23,22 +25,27 @@ public class MusicManager : MonoBehaviour
 
     public void AudioEventStarted(AudioSource source)
     {
-        StartCoroutine(Transition(loweredVolume, source, 1));
+        if (oldSource)
+            oldSource.volume = 0;
+
+        oldSource = source;
+        source.volume = 1;
+        StartCoroutine(Transition(loweredVolume, source));
     }
 
     public void AudioEventEnded(AudioSource source)
     {
-        StartCoroutine(Transition(originalVolume, source, 0));
+        StartCoroutine(Transition(originalVolume, source));
+        oldSource = null;
     }
 
-    IEnumerator Transition(float musicVolume, AudioSource source, float sourceVolume)
+    IEnumerator Transition(float musicVolume, AudioSource source)
     {
-        yield return new WaitUntil(() => Transitioned(musicVolume, source, sourceVolume));
+        yield return new WaitUntil(() => Transitioned(musicVolume, source));
     }
 
-    bool Transitioned(float musicVolume, AudioSource source, float sourceVolume)
+    bool Transitioned(float musicVolume, AudioSource sourcee)
     {
-        source.volume = Mathf.MoveTowards(source.volume, sourceVolume, musicTransitionSpeed * Time.deltaTime);
         musicSource.volume = Mathf.MoveTowards(musicSource.volume, musicVolume, musicTransitionSpeed * Time.deltaTime);   
         return musicSource.volume == musicVolume;
     }

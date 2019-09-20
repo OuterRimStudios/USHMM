@@ -20,7 +20,8 @@ public class AudioInteraction : Interaction
     public override void Interact()
     {
         if (hasPlayed && !isRepeatable) return;
-
+        else
+            audioSource.Stop();
         base.Interact();
 
         if(!audioSource.isPlaying)

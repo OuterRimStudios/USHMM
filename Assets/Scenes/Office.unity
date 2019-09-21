@@ -32661,6 +32661,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boarders
       objectReference: {fileID: 0}
+    - target: {fileID: 8482092958102039479, guid: fb93e27c8222c0848850f89134c7fd69,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6162488477645089579, guid: fb93e27c8222c0848850f89134c7fd69,
         type: 3}
       propertyPath: m_LocalPosition.x

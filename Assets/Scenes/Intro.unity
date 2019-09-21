@@ -412,6 +412,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -1.72
       objectReference: {fileID: 0}
+    - target: {fileID: 8433016763122639225, guid: fb93e27c8222c0848850f89134c7fd69,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2717578458623882485, guid: fb93e27c8222c0848850f89134c7fd69,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.87
+      objectReference: {fileID: 0}
     - target: {fileID: 1447631711865063978, guid: fb93e27c8222c0848850f89134c7fd69,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -431,16 +441,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -2.16
-      objectReference: {fileID: 0}
-    - target: {fileID: 8433016763122639225, guid: fb93e27c8222c0848850f89134c7fd69,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 2717578458623882485, guid: fb93e27c8222c0848850f89134c7fd69,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.87
       objectReference: {fileID: 0}
     - target: {fileID: 3484313583924290568, guid: fb93e27c8222c0848850f89134c7fd69,
         type: 3}
@@ -1060,11 +1060,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Intro Scene
       objectReference: {fileID: 0}
-    - target: {fileID: 721056895991426811, guid: 942439c792d6ef944bf72dd1a0b53654,
-        type: 3}
-      propertyPath: m_Name
-      value: Left Frame
-      objectReference: {fileID: 0}
     - target: {fileID: -4682901362387869790, guid: 942439c792d6ef944bf72dd1a0b53654,
         type: 3}
       propertyPath: m_Name
@@ -1145,6 +1140,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c8307454dc2eae7408e08c0ddf62c612, type: 2}
+    - target: {fileID: 721056895991426811, guid: 942439c792d6ef944bf72dd1a0b53654,
+        type: 3}
+      propertyPath: m_Name
+      value: Left Frame
+      objectReference: {fileID: 0}
     - target: {fileID: 7263891071949200700, guid: 942439c792d6ef944bf72dd1a0b53654,
         type: 3}
       propertyPath: m_Materials.Array.data[0]

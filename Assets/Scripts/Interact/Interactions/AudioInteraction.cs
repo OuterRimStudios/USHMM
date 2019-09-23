@@ -11,6 +11,7 @@ public class AudioInteraction : Interaction
     public bool lowersMusic;
 
     bool hasPlayed;
+    Coroutine audio;
     private void Start()
     {
         if(!audioSource)
@@ -20,26 +21,32 @@ public class AudioInteraction : Interaction
     public override void Interact()
     {
         if (hasPlayed && !isRepeatable) return;
-        else
-            audioSource.Stop();
+        if (audioSource.isPlaying) return;
+
         base.Interact();
 
         if(!audioSource.isPlaying)
-            audioSource.PlayOneShot(audioClips[Random.Range(0, audioClips.Length)]);
+        {
+            audioSource.clip = audioClips[Random.Range(0, audioClips.Length)];
+            audioSource.Play();
+            if (lowersMusic)
+            {
+                MusicManager.Instance.VoiceOverStarted(audioSource);
+                if (audio != null)
+                    StopCoroutine(audio);
+
+                MusicManager.Instance.AudioEventStarted();
+                audio = StartCoroutine(AudioEvent());
+            }
+        }
 
         if (!hasPlayed) hasPlayed = true;
-
-        if (lowersMusic)
-        {
-            MusicManager.Instance.AudioEventStarted(audioSource);
-            StartCoroutine(AudioEvent());
-        }
     }
 
     IEnumerator AudioEvent()
     {
         yield return new WaitUntil(() => AudioEnded());
-        MusicManager.Instance.AudioEventEnded(audioSource);
+        MusicManager.Instance.AudioEventEnded();
     }
 
     bool AudioEnded()

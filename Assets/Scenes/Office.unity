@@ -35065,7 +35065,7 @@ Transform:
   m_GameObject: {fileID: 1830088081}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
   m_Father: {fileID: 4635002790556781066}
   m_RootOrder: 0
@@ -36079,6 +36079,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1015190529264696409}
     m_Modifications:
+    - target: {fileID: 4074918556118251550, guid: 40effcadefb672d4ca62ca28d42465e9,
+        type: 3}
+      propertyPath: m_Name
+      value: Gela autoportet
+      objectReference: {fileID: 0}
     - target: {fileID: 1069144279169206797, guid: 40effcadefb672d4ca62ca28d42465e9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -36148,11 +36153,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.36329994
-      objectReference: {fileID: 0}
-    - target: {fileID: 4074918556118251550, guid: 40effcadefb672d4ca62ca28d42465e9,
-        type: 3}
-      propertyPath: m_Name
-      value: Gela autoportet
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40effcadefb672d4ca62ca28d42465e9, type: 3}
@@ -38810,6 +38810,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1015190529264696409}
     m_Modifications:
+    - target: {fileID: 9152518590369154922, guid: 156e51490bb62b7498413d64a7054043,
+        type: 3}
+      propertyPath: m_Name
+      value: Gela wnetrze_izby
+      objectReference: {fileID: 0}
     - target: {fileID: 5286978514913473913, guid: 156e51490bb62b7498413d64a7054043,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -38879,11 +38884,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.38557023
-      objectReference: {fileID: 0}
-    - target: {fileID: 9152518590369154922, guid: 156e51490bb62b7498413d64a7054043,
-        type: 3}
-      propertyPath: m_Name
-      value: Gela wnetrze_izby
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 156e51490bb62b7498413d64a7054043, type: 3}
@@ -43280,6 +43280,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1015190529264696409}
     m_Modifications:
+    - target: {fileID: 8418781457380311952, guid: 1cb6320a51ffaf8468f5dc1b02f3c6d8,
+        type: 3}
+      propertyPath: m_Name
+      value: Gela dziewczynka3
+      objectReference: {fileID: 0}
     - target: {fileID: 4796013617069322627, guid: 1cb6320a51ffaf8468f5dc1b02f3c6d8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -43349,11 +43354,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.28575993
-      objectReference: {fileID: 0}
-    - target: {fileID: 8418781457380311952, guid: 1cb6320a51ffaf8468f5dc1b02f3c6d8,
-        type: 3}
-      propertyPath: m_Name
-      value: Gela dziewczynka3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cb6320a51ffaf8468f5dc1b02f3c6d8, type: 3}
@@ -44151,6 +44151,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1015190529264696409}
     m_Modifications:
+    - target: {fileID: 430848087092124959, guid: f86653f4df0c2ad44a7ba58750175256,
+        type: 3}
+      propertyPath: m_Name
+      value: "Gela MZ\u0307IH-A-31_1"
+      objectReference: {fileID: 0}
     - target: {fileID: 3720527263546912524, guid: f86653f4df0c2ad44a7ba58750175256,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -44220,11 +44225,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.44224638
-      objectReference: {fileID: 0}
-    - target: {fileID: 430848087092124959, guid: f86653f4df0c2ad44a7ba58750175256,
-        type: 3}
-      propertyPath: m_Name
-      value: "Gela MZ\u0307IH-A-31_1"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f86653f4df0c2ad44a7ba58750175256, type: 3}
@@ -45033,6 +45033,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1015190529264696409}
     m_Modifications:
+    - target: {fileID: 2037575241477545250, guid: 0461ca9623f4aa84aadfb2e8a4c19ca5,
+        type: 3}
+      propertyPath: m_Name
+      value: Gelas portet_chlopca_z_obandazowanym_okiem
+      objectReference: {fileID: 0}
     - target: {fileID: 3034777686513856305, guid: 0461ca9623f4aa84aadfb2e8a4c19ca5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -45102,11 +45107,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.33059198
-      objectReference: {fileID: 0}
-    - target: {fileID: 2037575241477545250, guid: 0461ca9623f4aa84aadfb2e8a4c19ca5,
-        type: 3}
-      propertyPath: m_Name
-      value: Gelas portet_chlopca_z_obandazowanym_okiem
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0461ca9623f4aa84aadfb2e8a4c19ca5, type: 3}
@@ -45275,6 +45275,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1015190529264696409}
     m_Modifications:
+    - target: {fileID: 765581227675244327, guid: fb7a284c4146dd34c941a8c246d4eb36,
+        type: 3}
+      propertyPath: m_Name
+      value: "Gela MZ\u0307IH-A-909_1"
+      objectReference: {fileID: 0}
     - target: {fileID: 4378833416982668596, guid: fb7a284c4146dd34c941a8c246d4eb36,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -45344,11 +45349,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.43342024
-      objectReference: {fileID: 0}
-    - target: {fileID: 765581227675244327, guid: fb7a284c4146dd34c941a8c246d4eb36,
-        type: 3}
-      propertyPath: m_Name
-      value: "Gela MZ\u0307IH-A-909_1"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb7a284c4146dd34c941a8c246d4eb36, type: 3}

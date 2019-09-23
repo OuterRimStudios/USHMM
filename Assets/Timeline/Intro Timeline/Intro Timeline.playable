@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 14.166666666666668
+    m_Start: 19.950000000000003
     m_ClipIn: 32.11666666666667
     m_Asset: {fileID: 514839791164032034}
     m_Duration: 35.06666666666667
@@ -343,7 +343,7 @@ MonoBehaviour:
     m_Start: 0
     m_ClipIn: 1.8
     m_Asset: {fileID: -790188695090984212}
-    m_Duration: 9.233333333333334
+    m_Duration: 15.016666666666667
     m_TimeScale: 1
     m_ParentTrack: {fileID: 334494693909212649}
     m_EaseInDuration: 1
@@ -477,7 +477,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 28.69999999999999
+    m_Start: 34.48333333333329
     m_ClipIn: 0
     m_Asset: {fileID: -3339616128451810293}
     m_Duration: 1.5
@@ -576,7 +576,7 @@ MonoBehaviour:
     m_Start: 0
     m_ClipIn: 0
     m_Asset: {fileID: -1338667751681811306}
-    m_Duration: 9.233333333333334
+    m_Duration: 15.016666666666667
     m_TimeScale: 1
     m_ParentTrack: {fileID: 2048886245442520366}
     m_EaseInDuration: 0
@@ -679,7 +679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Time: 42.916666666666664
+  m_Time: 48.69999999999996
   m_Retroactive: 0
   m_EmitOnce: 1
   m_Asset: {fileID: 11400000, guid: 7120c600f1fbae74c9ef190c18d11886, type: 2}
@@ -756,7 +756,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 9.233333333333334
+    m_Start: 14.033333333333333
     m_ClipIn: 0
     m_Asset: {fileID: -5639809345716177007}
     m_Duration: 40
@@ -868,7 +868,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 9.233333333333334
+    m_Start: 15.016666666666667
     m_ClipIn: 0
     m_Asset: {fileID: -2209921194910742146}
     m_Duration: 55.78333333333333
@@ -951,7 +951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Time: 28.69999999999999
+  m_Time: 34.48333333333329
   m_Retroactive: 0
   m_EmitOnce: 0
   m_Asset: {fileID: 11400000, guid: ed78abc01508f8c4e97a07f6412a0ee6, type: 2}

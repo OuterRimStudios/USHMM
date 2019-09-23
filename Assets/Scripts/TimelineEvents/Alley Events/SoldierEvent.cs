@@ -3,18 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using OuterRimStudios.Utilities;
 
-public class SoldierEvent : OuterRimStudios.Event
+public class SoldierEvent : Interaction
 {
     public float speed;
     public Transform targetToMove;
     public Transform targetLocation;
 
-    public override void StartEvent()
+    public override void Interact()
     {
         Debug.Log("Soldier Event Started");
         targetToMove.gameObject.SetActive(true);
         StartCoroutine(MoveToPosition());
-        base.StartEvent();
     }
 
     IEnumerator MoveToPosition()

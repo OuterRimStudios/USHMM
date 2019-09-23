@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using OuterRimStudios.Utilities;
 public class AudioInteraction : Interaction
 {
     public AudioClip[] audioClips;
@@ -12,6 +12,8 @@ public class AudioInteraction : Interaction
 
     bool hasPlayed;
     Coroutine audio;
+    float time;
+
     private void Start()
     {
         if(!audioSource)
@@ -35,6 +37,7 @@ public class AudioInteraction : Interaction
                 if (audio != null)
                     StopCoroutine(audio);
 
+                time = audioSource.clip.length;
                 MusicManager.Instance.AudioEventStarted();
                 audio = StartCoroutine(AudioEvent());
             }
@@ -51,6 +54,11 @@ public class AudioInteraction : Interaction
 
     bool AudioEnded()
     {
+        MathUtilities.Timer(ref time);
+
+        if (time <= 0)
+            MusicManager.Instance.CheckSource(audioSource);
+
         return !audioSource.isPlaying;
     }
 

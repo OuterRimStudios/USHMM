@@ -44,6 +44,13 @@ public class MusicManager : MonoBehaviour
         return musicSource.volume == musicVolume;
     }
 
+    public void CheckSource(AudioSource source)
+    {
+        Debug.Log("Checking Source");
+        if (oldSource == source)
+            oldSource = null;
+    }
+
     public void VoiceOverStarted(AudioSource source)
     {
         Debug.Log("New Source: " + source.transform.parent.name);

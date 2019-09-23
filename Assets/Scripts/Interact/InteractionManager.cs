@@ -42,7 +42,6 @@ public class InteractionManager : MonoBehaviour
         //Adds each object the user interacts with to the analytics
         List<InteractedObject> objectData = new List<InteractedObject> { new InteractedObject { Interactable = newInteraction.gameObject.name } };
         AnalyticsUtilities.Event(sceneName + "_InteractedObjects", objectData);
-        Debug.Log("Interacted with: " + newInteraction.gameObject.name);
 
         if (!initialTimeSent)
         {

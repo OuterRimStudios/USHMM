@@ -23,31 +23,48 @@ public class MusicManager : MonoBehaviour
         Instance = this;
     }
 
-    public void AudioEventStarted(AudioSource source)
+    public void AudioEventStarted()
     {
-        if (oldSource)
-            oldSource.volume = 0;
-
-        oldSource = source;
-        source.volume = 1;
-        StartCoroutine(Transition(loweredVolume, source));
+        StartCoroutine(Transition(loweredVolume));
     }
 
-    public void AudioEventEnded(AudioSource source)
+    public void AudioEventEnded()
     {
-        StartCoroutine(Transition(originalVolume, source));
-        oldSource = null;
+        StartCoroutine(Transition(originalVolume));
     }
 
-    IEnumerator Transition(float musicVolume, AudioSource source)
+    IEnumerator Transition(float musicVolume)
     {
-        yield return new WaitUntil(() => Transitioned(musicVolume, source));
+        yield return new WaitUntil(() => Transitioned(musicVolume));
     }
 
-    bool Transitioned(float musicVolume, AudioSource sourcee)
+    bool Transitioned(float musicVolume)
     {
         musicSource.volume = Mathf.MoveTowards(musicSource.volume, musicVolume, musicTransitionSpeed * Time.deltaTime);   
         return musicSource.volume == musicVolume;
+    }
+
+    public void CheckSource(AudioSource source)
+    {
+        Debug.Log("Checking Source");
+        if (oldSource == source)
+            oldSource = null;
+    }
+
+    public void VoiceOverStarted(AudioSource source)
+    {
+        Debug.Log("New Source: " + source.transform.parent.name);
+        if (oldSource)
+            Debug.Log("Old Source: " + oldSource.transform.parent.name);
+
+        if (oldSource)
+        {
+            oldSource.volume = 0;
+            oldSource.Stop();
+            oldSource.volume = 1;
+        }
+
+        oldSource = source;
     }
 
 }

@@ -14387,12 +14387,12 @@ MonoBehaviour:
   poseEditorExpanded: 1
   blendEditorExpanded: 0
   poseNames:
-  - Paper Pose (MAIN)
+  - Picture Pose 9 (MAIN)
   previewLeftHandPrefab: {fileID: 1000013348574242, guid: 638779290bce1af49b356f33dcc6fccf,
     type: 3}
   previewRightHandPrefab: {fileID: 1000010304998954, guid: 6def53d002137b747aec0b29551e0e25,
     type: 3}
-  skeletonMainPose: {fileID: 11400000, guid: 693b3ba6558cb964ba8b9364d800af5c, type: 2}
+  skeletonMainPose: {fileID: 11400000, guid: 5bedd014698ff2b4bab1685bd00088ce, type: 2}
   skeletonAdditionalPoses: []
   showLeftPreview: 0
   showRightPreview: 0
@@ -14416,12 +14416,12 @@ MonoBehaviour:
   poseEditorExpanded: 1
   blendEditorExpanded: 0
   poseNames:
-  - Paper Pose (MAIN)
+  - Picture Pose 8 (MAIN)
   previewLeftHandPrefab: {fileID: 1000013348574242, guid: 638779290bce1af49b356f33dcc6fccf,
     type: 3}
   previewRightHandPrefab: {fileID: 1000010304998954, guid: 6def53d002137b747aec0b29551e0e25,
     type: 3}
-  skeletonMainPose: {fileID: 11400000, guid: 693b3ba6558cb964ba8b9364d800af5c, type: 2}
+  skeletonMainPose: {fileID: 11400000, guid: 3707b38698aa1754b8844dd3cef9a75a, type: 2}
   skeletonAdditionalPoses: []
   showLeftPreview: 0
   showRightPreview: 0
@@ -14445,12 +14445,12 @@ MonoBehaviour:
   poseEditorExpanded: 1
   blendEditorExpanded: 0
   poseNames:
-  - Paper Pose (MAIN)
+  - Picture Pose 10 (MAIN)
   previewLeftHandPrefab: {fileID: 1000013348574242, guid: 638779290bce1af49b356f33dcc6fccf,
     type: 3}
   previewRightHandPrefab: {fileID: 1000010304998954, guid: 6def53d002137b747aec0b29551e0e25,
     type: 3}
-  skeletonMainPose: {fileID: 11400000, guid: 693b3ba6558cb964ba8b9364d800af5c, type: 2}
+  skeletonMainPose: {fileID: 11400000, guid: 4331a0eb88b07634187d24c8d3bfe40d, type: 2}
   skeletonAdditionalPoses: []
   showLeftPreview: 0
   showRightPreview: 0
@@ -14474,12 +14474,12 @@ MonoBehaviour:
   poseEditorExpanded: 1
   blendEditorExpanded: 0
   poseNames:
-  - Paper Pose (MAIN)
+  - Picture Pose 1 (MAIN)
   previewLeftHandPrefab: {fileID: 1000013348574242, guid: 638779290bce1af49b356f33dcc6fccf,
     type: 3}
   previewRightHandPrefab: {fileID: 1000010304998954, guid: 6def53d002137b747aec0b29551e0e25,
     type: 3}
-  skeletonMainPose: {fileID: 11400000, guid: 693b3ba6558cb964ba8b9364d800af5c, type: 2}
+  skeletonMainPose: {fileID: 11400000, guid: e5883503b9c788a498935b96774e634f, type: 2}
   skeletonAdditionalPoses: []
   showLeftPreview: 0
   showRightPreview: 0
@@ -14503,12 +14503,12 @@ MonoBehaviour:
   poseEditorExpanded: 1
   blendEditorExpanded: 0
   poseNames:
-  - Paper Pose (MAIN)
+  - Picture Pose 6 (MAIN)
   previewLeftHandPrefab: {fileID: 1000013348574242, guid: 638779290bce1af49b356f33dcc6fccf,
     type: 3}
   previewRightHandPrefab: {fileID: 1000010304998954, guid: 6def53d002137b747aec0b29551e0e25,
     type: 3}
-  skeletonMainPose: {fileID: 11400000, guid: 693b3ba6558cb964ba8b9364d800af5c, type: 2}
+  skeletonMainPose: {fileID: 11400000, guid: 2246e39a903a5da49973d0bb650f0144, type: 2}
   skeletonAdditionalPoses: []
   showLeftPreview: 0
   showRightPreview: 0
@@ -14532,12 +14532,12 @@ MonoBehaviour:
   poseEditorExpanded: 1
   blendEditorExpanded: 0
   poseNames:
-  - Paper Pose (MAIN)
+  - Picture Pose 4 (MAIN)
   previewLeftHandPrefab: {fileID: 1000013348574242, guid: 638779290bce1af49b356f33dcc6fccf,
     type: 3}
   previewRightHandPrefab: {fileID: 1000010304998954, guid: 6def53d002137b747aec0b29551e0e25,
     type: 3}
-  skeletonMainPose: {fileID: 11400000, guid: 693b3ba6558cb964ba8b9364d800af5c, type: 2}
+  skeletonMainPose: {fileID: 11400000, guid: db11793e98d6133489df6b4cc6420b62, type: 2}
   skeletonAdditionalPoses: []
   showLeftPreview: 0
   showRightPreview: 0
@@ -14561,12 +14561,12 @@ MonoBehaviour:
   poseEditorExpanded: 1
   blendEditorExpanded: 0
   poseNames:
-  - Paper Pose (MAIN)
+  - Picture Pose 7 (MAIN)
   previewLeftHandPrefab: {fileID: 1000013348574242, guid: 638779290bce1af49b356f33dcc6fccf,
     type: 3}
   previewRightHandPrefab: {fileID: 1000010304998954, guid: 6def53d002137b747aec0b29551e0e25,
     type: 3}
-  skeletonMainPose: {fileID: 11400000, guid: 693b3ba6558cb964ba8b9364d800af5c, type: 2}
+  skeletonMainPose: {fileID: 11400000, guid: 3b8c30187c0a27841a3f3cebd5ce2756, type: 2}
   skeletonAdditionalPoses: []
   showLeftPreview: 0
   showRightPreview: 0
@@ -14590,12 +14590,12 @@ MonoBehaviour:
   poseEditorExpanded: 1
   blendEditorExpanded: 0
   poseNames:
-  - Paper Pose (MAIN)
+  - Picture Pose 3 (MAIN)
   previewLeftHandPrefab: {fileID: 1000013348574242, guid: 638779290bce1af49b356f33dcc6fccf,
     type: 3}
   previewRightHandPrefab: {fileID: 1000010304998954, guid: 6def53d002137b747aec0b29551e0e25,
     type: 3}
-  skeletonMainPose: {fileID: 11400000, guid: 693b3ba6558cb964ba8b9364d800af5c, type: 2}
+  skeletonMainPose: {fileID: 11400000, guid: 04fc3cfa1da4f5c4787e38f4c282bd08, type: 2}
   skeletonAdditionalPoses: []
   showLeftPreview: 0
   showRightPreview: 0
@@ -20184,7 +20184,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 561288328}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.611, y: 0.7488, z: -1.972}
+  m_LocalPosition: {x: 0.6182, y: 0.7463, z: -1.972}
   m_LocalScale: {x: 0.34826812, y: 0.57793754, z: 0.51486737}
   m_Children:
   - {fileID: 835279260}
@@ -20203,8 +20203,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.4674192, y: 0.40331244, z: 0.042657454}
-  m_Center: {x: 0.034902807, y: -0.00065249676, z: 0.002108883}
+  m_Size: {x: 0.45555744, y: 0.40331244, z: 0.042657454}
+  m_Center: {x: -0.035585977, y: -0.0006525018, z: 0.0021088824}
 --- !u!65 &561288331
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20216,8 +20216,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.4674192, y: 0.40331244, z: 0.014244995}
-  m_Center: {x: 0.034902807, y: -0.0006524974, z: 0.00784273}
+  m_Size: {x: 0.45852304, y: 0.40331244, z: 0.014244995}
+  m_Center: {x: -0.0341032, y: -0.0006525023, z: 0.00784273}
 --- !u!114 &561288332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20396,12 +20396,12 @@ MonoBehaviour:
   poseEditorExpanded: 1
   blendEditorExpanded: 0
   poseNames:
-  - Paper Pose (MAIN)
+  - PoemPose (MAIN)
   previewLeftHandPrefab: {fileID: 1000013348574242, guid: 638779290bce1af49b356f33dcc6fccf,
     type: 3}
   previewRightHandPrefab: {fileID: 1000010304998954, guid: 6def53d002137b747aec0b29551e0e25,
     type: 3}
-  skeletonMainPose: {fileID: 11400000, guid: 693b3ba6558cb964ba8b9364d800af5c, type: 2}
+  skeletonMainPose: {fileID: 11400000, guid: 272865abd08ca45478a7ae04ca869f0f, type: 2}
   skeletonAdditionalPoses: []
   showLeftPreview: 0
   showRightPreview: 0
@@ -20663,7 +20663,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 576471036}
   m_LocalRotation: {x: 0.6885652, y: 0.11725743, z: 0.12009771, w: -0.7054823}
-  m_LocalPosition: {x: 0.924, y: 0.7986, z: 0.572}
+  m_LocalPosition: {x: 0.924, y: 0.7992, z: 0.572}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 942706003}
@@ -20833,8 +20833,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.22840987, y: 0.241492, z: 0.02281158}
-  m_Center: {x: -0.005613049, y: -0.00020641799, z: -0.017511765}
+  m_Size: {x: 0.22134408, y: 0.24304453, z: 0.022811582}
+  m_Center: {x: 0.002112741, y: 0.0021224124, z: -0.017511848}
 --- !u!65 &576471043
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20846,8 +20846,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.22840987, y: 0.241492, z: 0.04131023}
-  m_Center: {x: -0.0056130486, y: -0.00020641796, z: -0.01666818}
+  m_Size: {x: 0.22111228, y: 0.24564573, z: 0.041310225}
+  m_Center: {x: 0.0030049034, y: 0.0021427711, z: -0.016668256}
 --- !u!114 &576471044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20914,12 +20914,12 @@ MonoBehaviour:
   poseEditorExpanded: 1
   blendEditorExpanded: 0
   poseNames:
-  - Paper Pose (MAIN)
+  - StationLetterPose (MAIN)
   previewLeftHandPrefab: {fileID: 1000013348574242, guid: 638779290bce1af49b356f33dcc6fccf,
     type: 3}
   previewRightHandPrefab: {fileID: 1000010304998954, guid: 6def53d002137b747aec0b29551e0e25,
     type: 3}
-  skeletonMainPose: {fileID: 11400000, guid: 693b3ba6558cb964ba8b9364d800af5c, type: 2}
+  skeletonMainPose: {fileID: 11400000, guid: 64f6c306f429ad24588840e7f04cb42f, type: 2}
   skeletonAdditionalPoses: []
   showLeftPreview: 0
   showRightPreview: 0
@@ -21064,7 +21064,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &592388146
 Transform:
   m_ObjectHideFlags: 0
@@ -21387,7 +21387,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705370124}
   m_LocalRotation: {x: -0.6916622, y: 0.14698079, z: 0.14698043, w: 0.69166243}
-  m_LocalPosition: {x: -1.4940199, y: 0.803, z: -0.36900902}
+  m_LocalPosition: {x: -1.4940199, y: 0.808, z: -0.36900902}
   m_LocalScale: {x: 1.4244, y: 1.4244, z: 1.4244}
   m_Children:
   - {fileID: 381570652}
@@ -21638,12 +21638,12 @@ MonoBehaviour:
   poseEditorExpanded: 1
   blendEditorExpanded: 0
   poseNames:
-  - Paper Pose (MAIN)
+  - AnnouncementPose (MAIN)
   previewLeftHandPrefab: {fileID: 1000013348574242, guid: 638779290bce1af49b356f33dcc6fccf,
     type: 3}
   previewRightHandPrefab: {fileID: 1000010304998954, guid: 6def53d002137b747aec0b29551e0e25,
     type: 3}
-  skeletonMainPose: {fileID: 11400000, guid: 693b3ba6558cb964ba8b9364d800af5c, type: 2}
+  skeletonMainPose: {fileID: 11400000, guid: 4c598b05bfdc2e14caf3dc7b75ed0d89, type: 2}
   skeletonAdditionalPoses: []
   showLeftPreview: 0
   showRightPreview: 0
@@ -26706,12 +26706,12 @@ PrefabInstance:
     - target: {fileID: 2623551323975035374, guid: 9ec4680d5068f2a4187c03a96373213b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.104
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2623551323975035374, guid: 9ec4680d5068f2a4187c03a96373213b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0065
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2623551323975035374, guid: 9ec4680d5068f2a4187c03a96373213b,
         type: 3}
@@ -35522,7 +35522,12 @@ PrefabInstance:
     - target: {fileID: 1830824684736228161, guid: 0af6cf8cc2e254e4b93ae0d51c1ba8e3,
         type: 3}
       propertyPath: m_Name
-      value: "Gela MZ\u0307IH-A-893_1"
+      value: "Gela MZ\u0307IH-A-893_1 (P6)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1830824684736228161, guid: 0af6cf8cc2e254e4b93ae0d51c1ba8e3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3401128669084571986, guid: 0af6cf8cc2e254e4b93ae0d51c1ba8e3,
         type: 3}
@@ -35562,7 +35567,7 @@ PrefabInstance:
     - target: {fileID: 3401128669084571986, guid: 0af6cf8cc2e254e4b93ae0d51c1ba8e3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3401128669084571986, guid: 0af6cf8cc2e254e4b93ae0d51c1ba8e3,
         type: 3}
@@ -35792,7 +35797,12 @@ PrefabInstance:
     - target: {fileID: 4074918556118251550, guid: 40effcadefb672d4ca62ca28d42465e9,
         type: 3}
       propertyPath: m_Name
-      value: Gela autoportet
+      value: Gela autoportet (P8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4074918556118251550, guid: 40effcadefb672d4ca62ca28d42465e9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1069144279169206797, guid: 40effcadefb672d4ca62ca28d42465e9,
         type: 3}
@@ -35832,7 +35842,7 @@ PrefabInstance:
     - target: {fileID: 1069144279169206797, guid: 40effcadefb672d4ca62ca28d42465e9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1069144279169206797, guid: 40effcadefb672d4ca62ca28d42465e9,
         type: 3}
@@ -35989,16 +35999,16 @@ Transform:
   m_LocalPosition: {x: 2.239, y: 0.767, z: 2.038}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 377035202}
-  - {fileID: 377035199}
-  - {fileID: 377035196}
-  - {fileID: 377035193}
-  - {fileID: 3088222968794614809}
-  - {fileID: 2926637732254989077}
   - {fileID: 377035188}
-  - {fileID: 377035185}
+  - {fileID: 3088222968794614809}
+  - {fileID: 377035202}
+  - {fileID: 377035196}
+  - {fileID: 2926637732254989077}
+  - {fileID: 377035193}
+  - {fileID: 377035199}
   - {fileID: 377035182}
   - {fileID: 377035179}
+  - {fileID: 377035185}
   - {fileID: 377035175}
   - {fileID: 377035171}
   m_Father: {fileID: 592388146}
@@ -36610,7 +36620,7 @@ GameObject:
   - component: {fileID: 1797881513589215563}
   - component: {fileID: 1797881513589215567}
   m_Layer: 0
-  m_Name: "Gela MZ\aIH-A-947_6_1"
+  m_Name: "Gela MZ\aIH-A-947_6_1 (P5)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36704,12 +36714,12 @@ MonoBehaviour:
   poseEditorExpanded: 1
   blendEditorExpanded: 0
   poseNames:
-  - Paper Pose (MAIN)
+  - Picture Pose 5 (MAIN)
   previewLeftHandPrefab: {fileID: 1000013348574242, guid: 638779290bce1af49b356f33dcc6fccf,
     type: 3}
   previewRightHandPrefab: {fileID: 1000010304998954, guid: 6def53d002137b747aec0b29551e0e25,
     type: 3}
-  skeletonMainPose: {fileID: 11400000, guid: 693b3ba6558cb964ba8b9364d800af5c, type: 2}
+  skeletonMainPose: {fileID: 11400000, guid: af0c30ab253688f49866a6088a70710b, type: 2}
   skeletonAdditionalPoses: []
   showLeftPreview: 0
   showRightPreview: 0
@@ -38441,7 +38451,7 @@ Transform:
   m_LocalScale: {x: 0.56058055, y: 0.56058043, z: 0.5605802}
   m_Children: []
   m_Father: {fileID: 1015190529264696409}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: -90.485}
 --- !u!20 &2948535873715983955 stripped
 Camera:
@@ -38467,7 +38477,12 @@ PrefabInstance:
     - target: {fileID: 4023339786051793316, guid: a0f4d153961a7364f8377b61fe8f5768,
         type: 3}
       propertyPath: m_Name
-      value: Gela port_chlopca_rys2
+      value: Gela port_chlopca_rys2 (P7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023339786051793316, guid: a0f4d153961a7364f8377b61fe8f5768,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 112202829074449335, guid: a0f4d153961a7364f8377b61fe8f5768,
         type: 3}
@@ -38507,7 +38522,7 @@ PrefabInstance:
     - target: {fileID: 112202829074449335, guid: a0f4d153961a7364f8377b61fe8f5768,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 112202829074449335, guid: a0f4d153961a7364f8377b61fe8f5768,
         type: 3}
@@ -38604,7 +38619,7 @@ Transform:
   m_LocalScale: {x: 0.30551583, y: 0.30551574, z: 0.30551553}
   m_Children: []
   m_Father: {fileID: 1015190529264696409}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3112159922097745911
 Transform:
@@ -40019,7 +40034,12 @@ PrefabInstance:
     - target: {fileID: 9152518590369154922, guid: 156e51490bb62b7498413d64a7054043,
         type: 3}
       propertyPath: m_Name
-      value: Gela wnetrze_izby
+      value: Gela wnetrze_izby (P1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9152518590369154922, guid: 156e51490bb62b7498413d64a7054043,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5286978514913473913, guid: 156e51490bb62b7498413d64a7054043,
         type: 3}
@@ -40059,7 +40079,7 @@ PrefabInstance:
     - target: {fileID: 5286978514913473913, guid: 156e51490bb62b7498413d64a7054043,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5286978514913473913, guid: 156e51490bb62b7498413d64a7054043,
         type: 3}
@@ -41125,12 +41145,12 @@ MonoBehaviour:
   poseEditorExpanded: 1
   blendEditorExpanded: 0
   poseNames:
-  - Paper Pose (MAIN)
+  - GelaLetterPose (MAIN)
   previewLeftHandPrefab: {fileID: 1000013348574242, guid: 638779290bce1af49b356f33dcc6fccf,
     type: 3}
   previewRightHandPrefab: {fileID: 1000010304998954, guid: 6def53d002137b747aec0b29551e0e25,
     type: 3}
-  skeletonMainPose: {fileID: 11400000, guid: 693b3ba6558cb964ba8b9364d800af5c, type: 2}
+  skeletonMainPose: {fileID: 11400000, guid: a77075b6c61459a4eb44e5b38d4bb567, type: 2}
   skeletonAdditionalPoses: []
   showLeftPreview: 0
   showRightPreview: 0
@@ -44562,7 +44582,12 @@ PrefabInstance:
     - target: {fileID: 8418781457380311952, guid: 1cb6320a51ffaf8468f5dc1b02f3c6d8,
         type: 3}
       propertyPath: m_Name
-      value: Gela dziewczynka3
+      value: Gela dziewczynka3 (P10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418781457380311952, guid: 1cb6320a51ffaf8468f5dc1b02f3c6d8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4796013617069322627, guid: 1cb6320a51ffaf8468f5dc1b02f3c6d8,
         type: 3}
@@ -44602,7 +44627,7 @@ PrefabInstance:
     - target: {fileID: 4796013617069322627, guid: 1cb6320a51ffaf8468f5dc1b02f3c6d8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4796013617069322627, guid: 1cb6320a51ffaf8468f5dc1b02f3c6d8,
         type: 3}
@@ -45378,7 +45403,7 @@ GameObject:
   - component: {fileID: 7279501020029752986}
   - component: {fileID: 7279501020029752990}
   m_Layer: 0
-  m_Name: "Gela MZ\aIH-A-947_6_1"
+  m_Name: "Gela MZ\aIH-A-947_6_1 (P2)"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45472,12 +45497,12 @@ MonoBehaviour:
   poseEditorExpanded: 1
   blendEditorExpanded: 0
   poseNames:
-  - Paper Pose (MAIN)
+  - Picture Pose 2 (MAIN)
   previewLeftHandPrefab: {fileID: 1000013348574242, guid: 638779290bce1af49b356f33dcc6fccf,
     type: 3}
   previewRightHandPrefab: {fileID: 1000010304998954, guid: 6def53d002137b747aec0b29551e0e25,
     type: 3}
-  skeletonMainPose: {fileID: 11400000, guid: 693b3ba6558cb964ba8b9364d800af5c, type: 2}
+  skeletonMainPose: {fileID: 11400000, guid: 438e02f9acebf384c9e8d922d86c80be, type: 2}
   skeletonAdditionalPoses: []
   showLeftPreview: 0
   showRightPreview: 0
@@ -45530,7 +45555,12 @@ PrefabInstance:
     - target: {fileID: 430848087092124959, guid: f86653f4df0c2ad44a7ba58750175256,
         type: 3}
       propertyPath: m_Name
-      value: "Gela MZ\u0307IH-A-31_1"
+      value: "Gela MZ\u0307IH-A-31_1 (P3)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 430848087092124959, guid: f86653f4df0c2ad44a7ba58750175256,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3720527263546912524, guid: f86653f4df0c2ad44a7ba58750175256,
         type: 3}
@@ -45570,7 +45600,7 @@ PrefabInstance:
     - target: {fileID: 3720527263546912524, guid: f86653f4df0c2ad44a7ba58750175256,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3720527263546912524, guid: f86653f4df0c2ad44a7ba58750175256,
         type: 3}
@@ -46504,7 +46534,12 @@ PrefabInstance:
     - target: {fileID: 2037575241477545250, guid: 0461ca9623f4aa84aadfb2e8a4c19ca5,
         type: 3}
       propertyPath: m_Name
-      value: Gelas portet_chlopca_z_obandazowanym_okiem
+      value: Gelas portet_chlopca_z_obandazowanym_okiem (P9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2037575241477545250, guid: 0461ca9623f4aa84aadfb2e8a4c19ca5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3034777686513856305, guid: 0461ca9623f4aa84aadfb2e8a4c19ca5,
         type: 3}
@@ -46544,7 +46579,7 @@ PrefabInstance:
     - target: {fileID: 3034777686513856305, guid: 0461ca9623f4aa84aadfb2e8a4c19ca5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3034777686513856305, guid: 0461ca9623f4aa84aadfb2e8a4c19ca5,
         type: 3}
@@ -46784,7 +46819,12 @@ PrefabInstance:
     - target: {fileID: 765581227675244327, guid: fb7a284c4146dd34c941a8c246d4eb36,
         type: 3}
       propertyPath: m_Name
-      value: "Gela MZ\u0307IH-A-909_1"
+      value: "Gela MZ\u0307IH-A-909_1 (P4)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 765581227675244327, guid: fb7a284c4146dd34c941a8c246d4eb36,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4378833416982668596, guid: fb7a284c4146dd34c941a8c246d4eb36,
         type: 3}
@@ -46824,7 +46864,7 @@ PrefabInstance:
     - target: {fileID: 4378833416982668596, guid: fb7a284c4146dd34c941a8c246d4eb36,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4378833416982668596, guid: fb7a284c4146dd34c941a8c246d4eb36,
         type: 3}

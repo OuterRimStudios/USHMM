@@ -36,13 +36,13 @@ public class ResetInteractable : MonoBehaviour
 
     public void GrabObject()
     {
-        if (!wasGrabbed) wasGrabbed = true;
-        isGrabbed = true;
+        //if (!wasGrabbed) wasGrabbed = true;
+        //isGrabbed = true;
     }
 
     public void LetGo()
     {
-        isGrabbed = false;
+        //isGrabbed = false;
     }
 
     private void Reset()

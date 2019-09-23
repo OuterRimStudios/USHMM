@@ -21064,7 +21064,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &592388146
 Transform:
   m_ObjectHideFlags: 0
@@ -26706,17 +26706,17 @@ PrefabInstance:
     - target: {fileID: 2623551323975035374, guid: 9ec4680d5068f2a4187c03a96373213b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.104
       objectReference: {fileID: 0}
     - target: {fileID: 2623551323975035374, guid: 9ec4680d5068f2a4187c03a96373213b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.0065
       objectReference: {fileID: 0}
     - target: {fileID: 2623551323975035374, guid: 9ec4680d5068f2a4187c03a96373213b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2623551323975035374, guid: 9ec4680d5068f2a4187c03a96373213b,
         type: 3}
@@ -26731,12 +26731,12 @@ PrefabInstance:
     - target: {fileID: 2623551323975035374, guid: 9ec4680d5068f2a4187c03a96373213b,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2623551323975035374, guid: 9ec4680d5068f2a4187c03a96373213b,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2623551323975035374, guid: 9ec4680d5068f2a4187c03a96373213b,
         type: 3}
@@ -26756,7 +26756,7 @@ PrefabInstance:
     - target: {fileID: 2623551323975035374, guid: 9ec4680d5068f2a4187c03a96373213b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 2623551323975035374, guid: 9ec4680d5068f2a4187c03a96373213b,
         type: 3}
@@ -39901,15 +39901,35 @@ PrefabInstance:
       propertyPath: m_TagString
       value: MainCamera
       objectReference: {fileID: 0}
+    - target: {fileID: 7546233874882099819, guid: 43e689801fc6af64bb4b92d2cc1ad551,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546233874882099819, guid: 43e689801fc6af64bb4b92d2cc1ad551,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7546233874882154337, guid: 43e689801fc6af64bb4b92d2cc1ad551,
         type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7546233874876928867, guid: 43e689801fc6af64bb4b92d2cc1ad551,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7546233874199139648, guid: 43e689801fc6af64bb4b92d2cc1ad551,
         type: 3}
       propertyPath: m_Radius
       value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546233874876985119, guid: 43e689801fc6af64bb4b92d2cc1ad551,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7546233875436686795, guid: 43e689801fc6af64bb4b92d2cc1ad551,
         type: 3}
@@ -39927,26 +39947,6 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7546233874876968723, guid: 43e689801fc6af64bb4b92d2cc1ad551,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7546233874882099819, guid: 43e689801fc6af64bb4b92d2cc1ad551,
-        type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 7546233874882099819, guid: 43e689801fc6af64bb4b92d2cc1ad551,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7546233874876928867, guid: 43e689801fc6af64bb4b92d2cc1ad551,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7546233874876985119, guid: 43e689801fc6af64bb4b92d2cc1ad551,
         type: 3}
       propertyPath: m_CollisionDetection
       value: 3

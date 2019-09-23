@@ -8326,7 +8326,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &647965504
 Transform:
   m_ObjectHideFlags: 0
@@ -10387,6 +10387,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 773056925}
   m_Mesh: {fileID: 705753497034316374, guid: eb50e4c7b726b1d46af882ded9090daf, type: 3}
+--- !u!84 &778166842
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  serializedVersion: 3
+  m_Width: 512
+  m_Height: 512
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthFormat: 0
+  m_ColorFormat: 8
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &779547487
 GameObject:
   m_ObjectHideFlags: 0
@@ -13042,6 +13077,8 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: 5625807851635466931, guid: 7f432204203bcd548a1ca12c8dcf5724, type: 2}
     value: {fileID: 1627073085}
+  - key: {fileID: 125804266623514762, guid: 7f432204203bcd548a1ca12c8dcf5724, type: 2}
+    value: {fileID: 1272648534}
   m_ExposedReferences:
     m_References:
     - fd433fbe4500d394585df814e8611ec3: {fileID: 1272648534}
@@ -16692,7 +16729,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1272648535
 Transform:
   m_ObjectHideFlags: 0
@@ -21387,7 +21424,7 @@ PrefabInstance:
     - target: {fileID: 6300121688840387471, guid: 19e43cf7d762800478fe2ebeb09f2b00,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.5
+      value: -2.93
       objectReference: {fileID: 0}
     - target: {fileID: 6300121688840387471, guid: 19e43cf7d762800478fe2ebeb09f2b00,
         type: 3}
@@ -21453,7 +21490,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 2004827737}
+      objectReference: {fileID: 778166842}
     - target: {fileID: 6300121688840387470, guid: 19e43cf7d762800478fe2ebeb09f2b00,
         type: 3}
       propertyPath: speed
@@ -24167,41 +24204,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1997826703}
   m_PrefabAsset: {fileID: 0}
---- !u!84 &2004827737
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  serializedVersion: 3
-  m_Width: 512
-  m_Height: 512
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthFormat: 0
-  m_ColorFormat: 8
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1001 &2012675170
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75243,6 +75245,11 @@ PrefabInstance:
         type: 3}
       propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
       value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8728562651328519291, guid: be1bd95ea7aa11a46b0ce8b018774086,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8728562651328519290, guid: be1bd95ea7aa11a46b0ce8b018774086,
         type: 3}

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Analytics;
+using OuterRimStudios.Utilities;
 
 public class SurveyManager : MonoBehaviour
 {
@@ -51,9 +52,13 @@ public class SurveyManager : MonoBehaviour
 
     public void Submit()
     {
+        var data = new List<object>();
+        //Add all of the answers to a list that will be sent to the analytics
         for (int i = 0; i < questions.Count - 1; i++)
-            Analytics.CustomEvent("SurveyResults", new Dictionary<string, object> { { "Question " + (i + 1), questions[i].answer } });
-        
+            data.Add(new { Answer = questions[i].answer }); //Analytics.CustomEvent("SurveyResults", new Dictionary<string, object> { { "Question " + (i + 1), questions[i].answer } });
+
+        AnalyticsUtilities.Event("SurveyResults", data);
+
         Debug.Log("Survey Submitted");
         //Send to analytics
     }

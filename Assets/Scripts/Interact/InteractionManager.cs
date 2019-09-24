@@ -40,7 +40,7 @@ public class InteractionManager : MonoBehaviour
         interactionCount++;
 
         //Adds each object the user interacts with to the analytics
-        List<InteractedObject> objectData = new List<InteractedObject> { new InteractedObject { Interactable = newInteraction.gameObject.name } };
+        var objectData = new List<object> { new  { Interactable = newInteraction.gameObject.name } };
         AnalyticsUtilities.Event(sceneName + "_InteractedObjects", objectData);
 
         if (!initialTimeSent)
@@ -57,26 +57,23 @@ public class InteractionManager : MonoBehaviour
     //This function is only called when a new scene is loaded
     void SendAnalytics(Scene currentScene)
     {
-        List<InteractionData> data;
+        var data = new List<object>();
         if (interactionCount == 0)
         {
-            data = new List<InteractionData>()
-            {
-                new InteractionData{ InitialInteractionTime = initialInteractionTime, AverageTimeBetweenInteractions = 0, TotalTimeInProximity = 0, AverageTimeInProximity = 0, NumberOfInteractions = 0},
-            };
+            data.Add(new { InitialInteractionTime = initialInteractionTime, AverageTimeBetweenInteractions = 0, TotalTimeInProximity = 0, AverageTimeInProximity = 0, NumberOfInteractions = 0});
         }
         else
         {
-            data = new List<InteractionData>()
-            {
-                new InteractionData{
+            data.Add
+            (
+                new {
                     InitialInteractionTime = initialInteractionTime,
                     AverageTimeBetweenInteractions = totalTimeBetweenInteractions/interactionCount,
                     TotalTimeInProximity = totalTimeInProximity,
                     AverageTimeInProximity = totalTimeInProximity > 0 ? (totalTimeInProximity/inProximityCount) : 0,
                     NumberOfInteractions = interactionCount
-                },
-            };
+                }
+            );
             /*
                 { "totalTimeInteracting", 0 },
                 { "averageTimeInteracting", 0 },
@@ -95,18 +92,4 @@ public class InteractionManager : MonoBehaviour
         currentInteraction?.StopInteraction();
         SendAnalytics(SceneManager.GetActiveScene());
     }
-}
-
-public class InteractedObject
-{
-    public string Interactable { get; set; }
-}
-
-public class InteractionData
-{
-    public float InitialInteractionTime { get; set; }
-    public float AverageTimeBetweenInteractions { get; set; }
-    public float TotalTimeInProximity { get; set; }
-    public float AverageTimeInProximity { get; set; }
-    public int NumberOfInteractions { get; set; }
 }

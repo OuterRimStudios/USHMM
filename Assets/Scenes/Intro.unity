@@ -497,16 +497,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -1.72
       objectReference: {fileID: 0}
-    - target: {fileID: 8433016763122639225, guid: fb93e27c8222c0848850f89134c7fd69,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 2717578458623882485, guid: fb93e27c8222c0848850f89134c7fd69,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.87
-      objectReference: {fileID: 0}
     - target: {fileID: 1447631711865063978, guid: fb93e27c8222c0848850f89134c7fd69,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -526,6 +516,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -2.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8433016763122639225, guid: fb93e27c8222c0848850f89134c7fd69,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2717578458623882485, guid: fb93e27c8222c0848850f89134c7fd69,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.87
       objectReference: {fileID: 0}
     - target: {fileID: 3484313583924290568, guid: fb93e27c8222c0848850f89134c7fd69,
         type: 3}
@@ -1099,13 +1099,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 549902063}
-  m_LocalRotation: {x: -0.39359164, y: -0.5678674, z: 0.6189853, w: -0.37345615}
-  m_LocalPosition: {x: -0.04457258, y: 0.2862326, z: -0.06971943}
+  m_LocalRotation: {x: -0.6902883, y: 0.029829448, z: 0.014477838, w: -0.7227743}
+  m_LocalPosition: {x: -0.044100005, y: 0.29430002, z: -0.07010006}
   m_LocalScale: {x: 0.0033944484, y: 0.0033944482, z: 0.0033944484}
   m_Children: []
   m_Father: {fileID: 1096455488}
   m_RootOrder: 20
-  m_LocalEulerAnglesHint: {x: 94.453, y: -54.373993, z: 11.373993}
+  m_LocalEulerAnglesHint: {x: 85.547005, y: -54.374004, z: -53.129}
 --- !u!212 &549902065
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2750,12 +2750,12 @@ PrefabInstance:
     - target: {fileID: 922191473760664256, guid: 67461a0142eef6441a1c803776950e4b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.01
+      value: -0.011
       objectReference: {fileID: 0}
     - target: {fileID: 922191473760664256, guid: 67461a0142eef6441a1c803776950e4b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.289
+      value: 0.2825
       objectReference: {fileID: 0}
     - target: {fileID: 922191473760664256, guid: 67461a0142eef6441a1c803776950e4b,
         type: 3}

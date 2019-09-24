@@ -60,7 +60,7 @@ public class InteractionManager : MonoBehaviour
         var data = new List<object>();
         if (interactionCount == 0)
         {
-            data.Add(new { InitialInteractionTime = initialInteractionTime, AverageTimeBetweenInteractions = 0, TotalTimeInProximity = 0, AverageTimeInProximity = 0, NumberOfInteractions = 0});
+            data.Add(new { InitialInteractionTime = initialInteractionTime, AverageTimeBetweenInteractions = 0, NumberOfInteractions = 0});
         }
         else
         {
@@ -69,8 +69,6 @@ public class InteractionManager : MonoBehaviour
                 new {
                     InitialInteractionTime = initialInteractionTime,
                     AverageTimeBetweenInteractions = totalTimeBetweenInteractions/interactionCount,
-                    TotalTimeInProximity = totalTimeInProximity,
-                    AverageTimeInProximity = totalTimeInProximity > 0 ? (totalTimeInProximity/inProximityCount) : 0,
                     NumberOfInteractions = interactionCount
                 }
             );

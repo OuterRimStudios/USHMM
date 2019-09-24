@@ -10,7 +10,7 @@ public class AudioInteraction : Interaction
     public AudioSource audioSource;
     public bool lowersMusic;
 
-    bool hasPlayed;
+    public bool HasPlayed { get; set; }
     Coroutine audio;
     float time;
 
@@ -22,7 +22,7 @@ public class AudioInteraction : Interaction
 
     public override void Interact()
     {
-        if (hasPlayed && !isRepeatable) return;
+        if (HasPlayed && !isRepeatable) return;
         if (audioSource.isPlaying) return;
 
         base.Interact();
@@ -43,7 +43,7 @@ public class AudioInteraction : Interaction
             }
         }
 
-        if (!hasPlayed) hasPlayed = true;
+        if (!HasPlayed) HasPlayed = true;
     }
 
     IEnumerator AudioEvent()

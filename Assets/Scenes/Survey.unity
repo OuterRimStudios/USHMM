@@ -1063,6 +1063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: 
+  answerField: {fileID: 1047001919}
 --- !u!114 &204715752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2054,7 +2055,12 @@ PrefabInstance:
     - target: {fileID: 7546233874891838805, guid: 43e689801fc6af64bb4b92d2cc1ad551,
         type: 3}
       propertyPath: hoverSphereRadius
-      value: 0.125
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546233874891838805, guid: 43e689801fc6af64bb4b92d2cc1ad551,
+        type: 3}
+      propertyPath: controllerHoverRadius
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 7546233874891789771, guid: 43e689801fc6af64bb4b92d2cc1ad551,
         type: 3}
@@ -5385,6 +5391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: 
+  answerField: {fileID: 479151488}
 --- !u!114 &1245360696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6118,6 +6125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: 
+  answerField: {fileID: 0}
 --- !u!114 &1471131672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8746,6 +8754,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: 
+  answerField: {fileID: 2147404815}
 --- !u!114 &1959458787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9365,6 +9374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answer: 
+  answerField: {fileID: 2135448277666474680}
 --- !u!222 &2135448276913031196
 CanvasRenderer:
   m_ObjectHideFlags: 0

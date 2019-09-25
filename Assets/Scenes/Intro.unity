@@ -3828,6 +3828,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7546233874891838805, guid: 43e689801fc6af64bb4b92d2cc1ad551,
+        type: 3}
+      propertyPath: hoverSphereRadius
+      value: 0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546233874891789771, guid: 43e689801fc6af64bb4b92d2cc1ad551,
+        type: 3}
+      propertyPath: hoverSphereRadius
+      value: 0.125
+      objectReference: {fileID: 0}
     - target: {fileID: 7546233874891841229, guid: 43e689801fc6af64bb4b92d2cc1ad551,
         type: 3}
       propertyPath: m_Enabled

@@ -2051,6 +2051,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7546233874891838805, guid: 43e689801fc6af64bb4b92d2cc1ad551,
+        type: 3}
+      propertyPath: hoverSphereRadius
+      value: 0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546233874891789771, guid: 43e689801fc6af64bb4b92d2cc1ad551,
+        type: 3}
+      propertyPath: hoverSphereRadius
+      value: 0.125
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43e689801fc6af64bb4b92d2cc1ad551, type: 3}
 --- !u!1 &482139279 stripped

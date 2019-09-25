@@ -13,7 +13,7 @@ public class Look : Interactable
 
     float time;
     float storedTime;
-
+    bool begun;
     public override void Start()
     {
         useProximity = true;
@@ -44,21 +44,42 @@ public class Look : Interactable
             {
                 if(hit.transform == transform)
                 {
-                    MathUtilities.Timer(ref time);
-                    if (Pointer.Instance)
+                
+                    if (Pointer.Instance && !Pointer.Instance.stopFill)
                     {
+                        if(!begun)
+                        {
+                            ResetTime();
+                            begun = true;
+                        }
+
+                        MathUtilities.Timer(ref time);
                         float pointerTime = MathUtilities.MapValue(0, lookTime, 1, 0, time);
                         Pointer.Instance.Fill(pointerTime);
-                    }
 
-                    if (!Triggered && time <= 0)
-                        Interact();
+
+                        if (!Triggered && time <= 0)
+                        {
+                            begun = false;
+                            Interact();
+                        }
+                    }
+                    else
+                    {
+                        MathUtilities.Timer(ref time);
+
+                        if (!Triggered && time <= 0)
+                            Interact();
+                    }
                 }
             }
             else
             {
                 if (Pointer.Instance)
+                {
+                    begun = false;
                     Pointer.Instance.StopFill();
+                }
 
                 ResetTime();
             }

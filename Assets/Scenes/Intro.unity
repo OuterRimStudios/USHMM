@@ -2163,6 +2163,52 @@ MonoBehaviour:
   isRepeatable: 0
   audioSource: {fileID: 1426259243}
   lowersMusic: 0
+--- !u!114 &1096455494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096455485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d32754f0b1bdc44aa9159ae51d3cf4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontInterupt: 1
+  sound: {fileID: 1096455493}
+  animator: {fileID: 1096455486}
+--- !u!114 &1096455495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096455485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: ed78abc01508f8c4e97a07f6412a0ee6, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1096455494}
+          m_MethodName: Interact
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1 &1136653917
 GameObject:
   m_ObjectHideFlags: 0
@@ -3813,7 +3859,7 @@ PlayableDirector:
   - key: {fileID: 6114753126726990069, guid: 85bdc966df2fbda4590ca685803654f0, type: 2}
     value: {fileID: 1426259243}
   - key: {fileID: 3539888062885169508, guid: 85bdc966df2fbda4590ca685803654f0, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1096455495}
   - key: {fileID: -494786679352392356, guid: 85bdc966df2fbda4590ca685803654f0, type: 2}
     value: {fileID: 1426259243}
   - key: {fileID: 1945550734239850060, guid: 85bdc966df2fbda4590ca685803654f0, type: 2}

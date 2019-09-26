@@ -218,6 +218,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: VolumeDustParticles
       objectReference: {fileID: 0}
+    - target: {fileID: 5411827983612827315, guid: 65508da141216914abbe2c358515b72e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5411827983612827318, guid: 65508da141216914abbe2c358515b72e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -497,16 +502,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -1.72
       objectReference: {fileID: 0}
-    - target: {fileID: 8433016763122639225, guid: fb93e27c8222c0848850f89134c7fd69,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 2717578458623882485, guid: fb93e27c8222c0848850f89134c7fd69,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.87
-      objectReference: {fileID: 0}
     - target: {fileID: 1447631711865063978, guid: fb93e27c8222c0848850f89134c7fd69,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -526,6 +521,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -2.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8433016763122639225, guid: fb93e27c8222c0848850f89134c7fd69,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2717578458623882485, guid: fb93e27c8222c0848850f89134c7fd69,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.87
       objectReference: {fileID: 0}
     - target: {fileID: 3484313583924290568, guid: fb93e27c8222c0848850f89134c7fd69,
         type: 3}

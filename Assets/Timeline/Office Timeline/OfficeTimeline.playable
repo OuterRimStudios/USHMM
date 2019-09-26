@@ -625,7 +625,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 150.15
+    m_Start: 133.78333333333333
     m_ClipIn: 0
     m_Asset: {fileID: -7046684246379829588}
     m_Duration: 144
@@ -658,7 +658,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: study radio song 3
   - m_Version: 1
-    m_Start: 294.15
+    m_Start: 277.7833333333333
     m_ClipIn: 0
     m_Asset: {fileID: -5854465914280522325}
     m_Duration: 186.7635
@@ -709,10 +709,10 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: study radio song
   - m_Version: 1
-    m_Start: 11.336500000000024
-    m_ClipIn: 47.95
-    m_Asset: {fileID: 7650194840423895809}
-    m_Duration: 138.81349999999998
+    m_Start: 11.783333333333333
+    m_ClipIn: 0
+    m_Asset: {fileID: 5531628707714035410}
+    m_Duration: 122
     m_TimeScale: 1
     m_ParentTrack: {fileID: 458638313046874825}
     m_EaseInDuration: 1.5
@@ -776,7 +776,7 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: study radio song
+    m_DisplayName: study radio song 2
   m_Markers:
     m_Objects: []
   m_TrackProperties:
@@ -944,6 +944,23 @@ MonoBehaviour:
     volume: 1
     stereoPan: 0
     spatialBlend: 0
+--- !u!114 &5531628707714035410
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
+  m_Name: AudioPlayableAsset
+  m_EditorClassIdentifier: 
+  m_Clip: {fileID: 8300000, guid: a7e78664b3c75ae40981f14c297660f4, type: 3}
+  m_Loop: 0
+  m_bufferingTime: 0.1
+  m_ClipProperties:
+    volume: 1
 --- !u!114 &6133927152645983902
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -968,23 +985,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fde0d25a170598d46a0b9dc16b4527a5, type: 3}
   m_Name: ActivationPlayableAsset
   m_EditorClassIdentifier: 
---- !u!114 &7650194840423895809
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
-  m_Name: AudioPlayableAsset
-  m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: 22473e656e7774948be6d01e316231c7, type: 3}
-  m_Loop: 0
-  m_bufferingTime: 0.1
-  m_ClipProperties:
-    volume: 1
 --- !u!114 &7670268855772702980
 MonoBehaviour:
   m_ObjectHideFlags: 1

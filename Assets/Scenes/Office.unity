@@ -16664,8 +16664,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 0
   DopplerLevel: 1
-  MinDistance: 0.2
-  MaxDistance: 0.4
+  MinDistance: 0.3
+  MaxDistance: 0.5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -16700,7 +16700,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.75
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -25421,8 +25421,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 0
   DopplerLevel: 1
-  MinDistance: 0.2
-  MaxDistance: 0.4
+  MinDistance: 0.3
+  MaxDistance: 0.5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -25457,7 +25457,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.75
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -31151,8 +31151,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 0
   DopplerLevel: 1
-  MinDistance: 0.2
-  MaxDistance: 0.4
+  MinDistance: 0.3
+  MaxDistance: 0.5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -31187,7 +31187,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.75
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -36618,8 +36618,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 0
   DopplerLevel: 1
-  MinDistance: 0.2
-  MaxDistance: 0.4
+  MinDistance: 0.3
+  MaxDistance: 0.5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -36654,7 +36654,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.75
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -38059,8 +38059,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 0
   DopplerLevel: 1
-  MinDistance: 0.2
-  MaxDistance: 0.4
+  MinDistance: 0.3
+  MaxDistance: 0.5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -38095,7 +38095,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.75
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -43568,6 +43568,56 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7546233874891838805, guid: 43e689801fc6af64bb4b92d2cc1ad551,
+        type: 3}
+      propertyPath: hoverSphereRadius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546233874891838805, guid: 43e689801fc6af64bb4b92d2cc1ad551,
+        type: 3}
+      propertyPath: useFingerJointHover
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546233874891838805, guid: 43e689801fc6af64bb4b92d2cc1ad551,
+        type: 3}
+      propertyPath: controllerHoverRadius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546233874891789771, guid: 43e689801fc6af64bb4b92d2cc1ad551,
+        type: 3}
+      propertyPath: hoverSphereRadius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546233874891789771, guid: 43e689801fc6af64bb4b92d2cc1ad551,
+        type: 3}
+      propertyPath: useFingerJointHover
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546233874891789771, guid: 43e689801fc6af64bb4b92d2cc1ad551,
+        type: 3}
+      propertyPath: controllerHoverRadius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546233874882088593, guid: 43e689801fc6af64bb4b92d2cc1ad551,
+        type: 3}
+      propertyPath: m_TagString
+      value: MainCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546233874882099819, guid: 43e689801fc6af64bb4b92d2cc1ad551,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546233874882099819, guid: 43e689801fc6af64bb4b92d2cc1ad551,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546233874882154337, guid: 43e689801fc6af64bb4b92d2cc1ad551,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7546233875024625959, guid: 43e689801fc6af64bb4b92d2cc1ad551,
         type: 3}
       propertyPath: m_Enabled
@@ -43578,20 +43628,20 @@ PrefabInstance:
       propertyPath: volumeTrigger
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 7546233874882088593, guid: 43e689801fc6af64bb4b92d2cc1ad551,
+    - target: {fileID: 7546233874876928867, guid: 43e689801fc6af64bb4b92d2cc1ad551,
         type: 3}
-      propertyPath: m_TagString
-      value: MainCamera
-      objectReference: {fileID: 0}
-    - target: {fileID: 7546233874882154337, guid: 43e689801fc6af64bb4b92d2cc1ad551,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      propertyPath: m_CollisionDetection
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7546233874199139648, guid: 43e689801fc6af64bb4b92d2cc1ad551,
         type: 3}
       propertyPath: m_Radius
       value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546233874876985119, guid: 43e689801fc6af64bb4b92d2cc1ad551,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7546233875436686795, guid: 43e689801fc6af64bb4b92d2cc1ad551,
         type: 3}
@@ -43612,56 +43662,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_CollisionDetection
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7546233874882099819, guid: 43e689801fc6af64bb4b92d2cc1ad551,
-        type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 7546233874882099819, guid: 43e689801fc6af64bb4b92d2cc1ad551,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7546233874876928867, guid: 43e689801fc6af64bb4b92d2cc1ad551,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7546233874876985119, guid: 43e689801fc6af64bb4b92d2cc1ad551,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7546233874891838805, guid: 43e689801fc6af64bb4b92d2cc1ad551,
-        type: 3}
-      propertyPath: hoverSphereRadius
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 7546233874891838805, guid: 43e689801fc6af64bb4b92d2cc1ad551,
-        type: 3}
-      propertyPath: useFingerJointHover
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7546233874891838805, guid: 43e689801fc6af64bb4b92d2cc1ad551,
-        type: 3}
-      propertyPath: controllerHoverRadius
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 7546233874891789771, guid: 43e689801fc6af64bb4b92d2cc1ad551,
-        type: 3}
-      propertyPath: hoverSphereRadius
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 7546233874891789771, guid: 43e689801fc6af64bb4b92d2cc1ad551,
-        type: 3}
-      propertyPath: useFingerJointHover
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7546233874891789771, guid: 43e689801fc6af64bb4b92d2cc1ad551,
-        type: 3}
-      propertyPath: controllerHoverRadius
-      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43e689801fc6af64bb4b92d2cc1ad551, type: 3}
@@ -44133,7 +44133,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d780476f760ba834a938320d46423e87, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0

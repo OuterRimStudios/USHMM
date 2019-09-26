@@ -2160,6 +2160,16 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1426259243}
+    - target: {fileID: 7417186777982319257, guid: 17c530e071d9e694f95ce6da200a504b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.835
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417186779127555472, guid: 17c530e071d9e694f95ce6da200a504b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.23699987
+      objectReference: {fileID: 0}
     - target: {fileID: 7417186779057302207, guid: 17c530e071d9e694f95ce6da200a504b,
         type: 3}
       propertyPath: m_LocalPosition.z

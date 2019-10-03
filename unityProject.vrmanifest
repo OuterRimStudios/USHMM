@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.ushmm.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\hecto\\Documents\\GitHub\\USHMM\\actions.json",
+      "action_manifest_path": "D:\\GitHub\\USHMM\\actions.json",
       "strings": {
         "en_us": {
           "name": "USHMM [Testing]"

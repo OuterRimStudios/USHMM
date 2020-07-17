@@ -224,6 +224,9 @@ namespace Valve.VR
         // Fade our overlays in/out over time.
         void Update()
         {
+            if (Input.GetKeyDown(KeyCode.R))
+                Trigger(0);
+
             if (_active != this)
                 return;
 
